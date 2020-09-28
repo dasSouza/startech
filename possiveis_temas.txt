@@ -1,4 +1,6 @@
-monitoramento de vinicoas
+<b>IDEIAS</b>
 
-monitoramento de areas esportivas
-
+- controle de inundações em bacias hidrográficas metropolitanas
+- monitoramento de vinicoas
+- monitoramento de areas esportivas
+- rede de sensores em floresta
