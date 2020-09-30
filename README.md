@@ -7,8 +7,8 @@
 Contexto de Negocio/Justificava de Projeto:
 https://docs.google.com/document/d/1f4aqpaLu_WPqBR1agaFmmKehn9ykMKmQ7A8Tq8nO5Dw/edit?usp=sharing
 
-Backlog do Projeto (TI):
-
+Backlog do Projeto (TI): 
+https://docs.google.com/spreadsheets/d/1SRIoD3DU5rX1TCXa356xtMs3ju-K8mL_wiOYQtGdIJU/edit#gid=122859679
 
 Power Point do Projeto:
 
