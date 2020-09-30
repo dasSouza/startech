@@ -1,6 +1,0 @@
-<b>IDEIAS</b>
-
-- controle de inundações em bacias hidrográficas metropolitanas
-- monitoramento de vinicoas
-- monitoramento de areas esportivas
-- rede de sensores em floresta
