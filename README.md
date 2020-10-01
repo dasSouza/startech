@@ -10,6 +10,9 @@ https://docs.google.com/document/d/1f4aqpaLu_WPqBR1agaFmmKehn9ykMKmQ7A8Tq8nO5Dw/
 Backlog do Projeto (TI): 
 https://docs.google.com/spreadsheets/d/1SRIoD3DU5rX1TCXa356xtMs3ju-K8mL_wiOYQtGdIJU/edit#gid=122859679
 
+Tabela para Burndown do Projeto (TI):
+https://docs.google.com/spreadsheets/d/10Lf5bD976ioWVFBCRRe8S17FehcBHazAmolfFC54RnE/edit?usp=sharing
+
 Power Point do Projeto:
 
 
