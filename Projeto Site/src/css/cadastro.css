@@ -1,0 +1,30 @@
+body{
+    background-image: url(../img/Floresta-min.png);
+    
+}
+
+form{
+    display: inline-grid;
+}
+
+.div_cad{
+    background-color: #2B9FD6;
+    width: 14vw;
+    height: 34vh;
+    align-content: center;
+    padding-left: 1%;
+    border-radius: 10%;
+    margin-left: 34%;
+    margin-top: 15%;
+}
+.div_cad input{
+    border: none;
+    border-bottom: #fdf5e6;
+}
+
+i{
+    color: aqua;
+    height: -1vh;
+    font-size: 4rem;
+    cursor: pointer;
+}
