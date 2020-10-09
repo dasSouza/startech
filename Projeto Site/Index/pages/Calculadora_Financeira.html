@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+</head>
+<body>
+    <h2>Coloque a area</h2>
+    <input type="text" id="inp_area"> <br>
+    <button onclick="Calcular()">Calcular</button>
+    <div id="resp"></div>
+
+</body>
+</html>
+<script>
+
+    function Calcular(){
+        var area = Number(inp_area.value);
+        var arduino = 100;
+
+        var instalacao = ((area/5) * arduino) * 1.05;   // 5 = distancia de cada arduino 
+                                                        //1.05 = taxa da instalação isso represente 5%
+        var qtArduino = (area/5);
+        resp.innerHTML = `  A instalação ficará ${instalacao}. <br>
+                            E a Quantidade de arduinos será de: ${qtArduino}. <br>
+                            E cada um terá uma distância de 5 metros.`
+    }
+</script>
