@@ -1,0 +1,126 @@
+body{
+    background-image: url(../images/background.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-attachment: fixed;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    scrollbar-color: #095b81;
+}
+.header{
+    top: 0px;
+	left: 0px;
+	width: 100%;
+    position: fixed;
+    padding-top: 5px;
+}
+.tampa{
+    top: 0px;
+	left: 0px;
+	width: 100%;
+    position: fixed;
+    padding-top: 5px;
+    height: 100%;
+    z-index: 2;
+    background: rgba(1, 10, 22, 0.678);
+}
+.ativo{
+    height: 60px;
+    background: rgba(16,24,36,0.4);
+}
+.menu_btn{
+    padding: 5px;
+    padding-left: 15px;
+    padding-right: 15px;
+    border: 2px #2b9fd6 solid;
+    border-radius: 5px;
+    background-color: transparent;
+    float: right;
+    margin-top: 0.5%;
+    margin-right: 10px;
+    color: #2bc2b4;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.menu_btn:hover{
+    background-color: rgba(195,245,255,0.1);
+    color: #31d3c3;
+}
+.title{
+    cursor: pointer;
+    margin-left: 50px;
+    margin-top: 0.3%;
+    font-size: 200%;
+    float: left;
+    color: #245ded;
+    text-transform: uppercase;
+}
+.logo{
+    cursor: pointer;
+    margin-left: 10px;
+    float: left;
+}
+.menu{
+    background-color: #272e4d;
+    text-align: center;
+    position: fixed;
+    width: 20%;
+    margin-left: 40%;
+    margin-top: 10%;
+    color: #2bc2b4;
+    text-transform: uppercase;
+    padding-bottom: 60px;
+    border-radius: 10px;
+    z-index: 3;
+}
+.menu ul{
+    padding-top: 40px;
+    list-style: none;
+    display: inline;
+}
+.menu li{
+    width: 60%;
+    margin-left: 20%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border-bottom: 3px #2b9fd6 solid;
+}
+.item_menu{
+    color: #2b9fd6;
+    text-decoration: none;
+}
+.item_menu:hover{
+    color: #4ebef1;
+}
+.content{
+    min-height: 200px;
+    width: 100%;
+    color: #ffffff;
+}
+.direita{
+    text-align: right;
+}
+.esquerda{
+    margin-left: 5%;
+    text-align: left;
+}
+.conteudo{
+    left: 0;
+    margin-top: 30%;
+    width: 100%;
+    position: absolute;
+    z-index: -1;
+}
+.titulo{
+    font-size: 150%;
+    padding-top: 3%;
+    margin-bottom: 3%;
+}
+.titulo.esquerda{
+    margin-left: 7%;
+}
+.titulo.direita{
+    margin-right: 7%;
+}
+.texto{
+    width: 90%;
+}
