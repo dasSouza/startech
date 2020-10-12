@@ -7,25 +7,14 @@ form{
 }
 
 .div_cad{
-    background: linear-gradient(45deg, #9ee674, #1ec1c4 .9);
     width: 58vw;
     height: 58vh;
-    align-content: left;
+    align-content: center;
     padding-left: 1%;
     border-radius: 5%;
-    margin-left: 20%;
+    margin-left: 25%;
     margin-top: 5%;
     position: relative;
-}
-
-.div_cad::after {
-    content: '';
-    display: block;
-    left: 50%;
-    top: 10%;
-    height: 80%;
-    border-left: 2px solid rgba(255,255,255,.8);
-    position: absolute;
 }
 
 .div_cad input{
@@ -64,18 +53,4 @@ h2 {
     color: azure;
     padding: 10px;
 }
-
-.formLog{
-    position: relative;
-    margin-left: 15%;
-}
-
-.formLog button{
-    margin-top: 27%;
-    padding: 10px;
-    border-radius: 5px;
-    color: azure;
-}
-
-
 

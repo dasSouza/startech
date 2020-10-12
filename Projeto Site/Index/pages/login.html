@@ -7,7 +7,7 @@
     <link rel="shortcut icon" href="../images/NIG_logo.png" type="image/x-icon">
     <link rel="stylesheet" href="../css/cadastro.css">
     <script src="https://kit.fontawesome.com/c19fd1ebd8.js" crossorigin="anonymous"></script>
-    <title>Cadastro-Iniciativa-0</title>
+    <title>Login</title>
 </head>
 
 <body>
@@ -16,17 +16,11 @@
 
     <div class="div_cad">
         <form action="" method="post">
-            <h2>Cadastre-se</h2>
-            <input type="text" name="email" placeholder="Insira seu e-mail:" required>
-            <input type="text" name="conf_email" placeholder="Confirme o e-mail" required>
-            <input type="password" name="senha" placeholder="Insira uma senha" required>
-            <button type="submit">Cadastrar</button>
-        </form>
-        <form action="" method="post" class="formLog">
             <h2>Login</h2>
             <input type="text" name="email" placeholder="Insira seu e-mail:" required>
-            <input type="password" name="senha" placeholder="Insira uma senha" required>
-            <button type="submit">Entrar</button>
+            <input type="password" name="senha" placeholder="Insira sua senha:" required>
+            <button onclick="enviar()" type="submit">Entrar</button>
+            <button class="btnCad"><a href="cadastro.html">Cadastre-se</a></button>
         </form>
     </div>
 
@@ -34,3 +28,11 @@
 </body>
 
 </html>
+
+<script>
+    //function para o botão de cadastro
+    function enviar(){
+        alert("Cadastro efetuado com sucesso!");
+    }
+
+</script>
