@@ -1,16 +1,39 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Calculadora</title>
+    <title>Calculadora Financeira</title>
+    <link rel="shortcut icon" href="../icone/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="../css/calculadora.css">
+    <link rel="stylesheet" href="../css/animations.css">
+    <script src="../js/js.js"></script>
 </head>
-<body>
-    <h2>Coloque a area</h2>
-    <input type="text" id="inp_area"> <br>
-    <button onclick="Calcular()">Calcular</button>
-    <div id="resp"></div>
-
+<body id="corpo" style="position: static;">
+    <div class="menu" id="menu" style="display: none;">
+        <ul class="paginas">
+            <li><a href="" class="item_menu"><b>Projeto</b></a></li>
+            <li><a href="" class="item_menu"><b>Sobre</b></a></li>
+            <li><a href="" class="item_menu"><b>Contato</b></a></li>
+            <li><a href="" class="item_menu"><b>Financeiro</b></a></li>
+        </ul>
+    </div>
+    <div class="tampa" id="tampa" style="display: none;" onclick="closemenu()"></div>
+    <div class="header ativo">
+        <div class="logo">
+            <img src="../images/startech_logo.png" alt=""v style="width: 50px">
+        </div>
+        <div class="title">
+            <b>Startec</b>
+        </div>
+        <div class="menu_btn" onclick="openmenu()"><b>MENU ☰</b></div>
+    </div>
+    <div class="caixa_calculadora">
+        <h2>Coloque a area</h2>
+        <input type="text" id="inp_area" class="inp_calculadora"> <br>
+        <div onclick="Calcular()" class="btn_calcular">Calcular</div>
+        <div id="resp"></div>
+    </div>
 </body>
 </html>
 <script>
