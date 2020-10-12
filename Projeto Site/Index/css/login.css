@@ -17,6 +17,7 @@ form{
     position: relative;
 }
 
+/*Estilização dos campos input dentro da class pai (div_cad)*/
 .div_cad input{
     border: none;
     border-bottom: #fdf5e6;
@@ -28,6 +29,7 @@ form{
     font-size: 18px;
 }
 
+/*Estilização da seta para retornar à página anterior*/
 i{
     color: aqua;
     height: -1vh;
@@ -41,6 +43,7 @@ h2 {
     color: azure;
 }
 
+/*Estilização dos botões dentro da class pai (div_cad)*/
 .div_cad button{
     background-color: #1ec1c4;
     border-color: #1ec1c4;
