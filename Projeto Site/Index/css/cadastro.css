@@ -1,5 +1,5 @@
 body{
-    background-image: url(../images/Floresta-min.png);
+    background-image: url(../images/background-cad.png);
 }
 
 form{
@@ -7,13 +7,14 @@ form{
 }
 
 .div_cad{
-    background: linear-gradient(45deg, #9ee674, #1ec1c4);
+    background: linear-gradient(45deg, #9ee674, #1ec1c4 .9);
     width: 58vw;
     height: 58vh;
     align-content: left;
     padding-left: 1%;
     border-radius: 5%;
-    margin-left: 5%;
+    margin-left: 20%;
+    margin-top: 5%;
     position: relative;
 }
 
