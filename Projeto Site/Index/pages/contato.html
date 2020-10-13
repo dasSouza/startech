@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../images/Startech_logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="../css/contato.css">
+    <title>Startech-contato</title>
+</head>
+
+<body>
+    <div class="container">
+        <form action="/cadastro" method="POST">
+            <label for="inp_email">Insira seu email:</label>
+            <input type="email" id="inp_email" class="padronizado" required>
+
+            <label for="inp_nome">Insira seu nome:</label>
+            <input type="text" id="inp_nome" class="padronizado" required>
+
+            <label for="txt_area">digite sua mensagem</label>
+            <textarea id="txt_area"  cols="30" rows="10" class="padronizado" required></textarea>
+            <label for="">
+                <input type="checkbox" checked>Receber notificação por email.
+            </label>
+            <button type="submit" class="btn">Enviar</button>
+        </form>
+    </div>
+</body>
+
+</html>

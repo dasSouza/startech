@@ -103,6 +103,15 @@ body{
     /* box-shadow: 9px 7px 5px #245ded;
     background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%); */
 }
+
+.caixa_calculadora a{
+    color: #4c88e4;
+}
+
+.caixa_calculadora a:hover{
+    color: #1681da;
+}
+
 .btn_calcular{
     width: 40%;
     height: 20%;

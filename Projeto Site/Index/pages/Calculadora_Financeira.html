@@ -1,14 +1,17 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Calculadora Financeira</title>
-    <link rel="shortcut icon" href="../icone/favicon.png" type="image/x-icon">
+    <link rel="shortcut icon" href="../images/Startech_logo.png" type="image/x-icon">
     <link rel="stylesheet" href="../css/calculadora.css">
     <link rel="stylesheet" href="../css/animations.css">
     <script src="../js/js.js"></script>
+    <title>Startech-simulador</title>
 </head>
+
 <body id="corpo" style="position: static;">
     <div class="menu" id="menu" style="display: none;">
         <ul class="paginas">
@@ -21,7 +24,7 @@
     <div class="tampa" id="tampa" style="display: none;" onclick="closemenu()"></div>
     <div class="header ativo">
         <div class="logo">
-            <img src="../images/startech_logo.png" alt=""v style="width: 50px">
+            <img src="../images/startech_logo.png" alt="" v style="width: 50px">
         </div>
         <div class="title">
             <b>Startec</b>
@@ -32,21 +35,25 @@
         <h2>Coloque a area</h2>
         <input type="text" id="inp_area" class="inp_calculadora"> <br>
         <div onclick="Calcular()" class="btn_calcular">Calcular</div>
+        
         <div id="resp"></div>
+        
     </div>
 </body>
+
 </html>
 <script>
 
-    function Calcular(){
+    function Calcular() {
         var area = Number(inp_area.value);
         var arduino = 100;
 
-        var instalacao = ((area/5) * arduino) * 1.05;   // 5 = distancia de cada arduino 
-                                                        //1.05 = taxa da instalação isso represente 5%
-        var qtArduino = (area/5);
-        resp.innerHTML = `  A instalação ficará ${instalacao}. <br>
-                            E a Quantidade de arduinos será de: ${qtArduino}. <br>
-                            E cada um terá uma distância de 5 metros.`
+        var instalacao = ((area / 5) * arduino) * 1.05;   // 5 = distancia de cada arduino 
+        //1.05 = taxa da instalação isso represente 5%
+        var qtArduino = (area / 5);
+        resp.innerHTML = `  A instalação ficará R$ ${instalacao.toFixed(2)}. <br>
+        E a Quantidade de arduinos será de: ${qtArduino}. <br>
+        E cada um terá uma distância de 5 metros.
+        Tem duvidas? entre em contato <a href="contato.html">por aqui.</a> `
     }
 </script>
