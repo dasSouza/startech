@@ -1,5 +1,5 @@
 body{
-    background-image: url(../images/background.jpg);
+    background-image: url(../images/cerrado2.jpg);
     background-repeat: no-repeat;
     background-size: 100%;
     background-attachment: fixed;
@@ -51,7 +51,7 @@ body{
     margin-top: 0.3%;
     font-size: 200%;
     float: left;
-    color: #245ded;
+    color: azure;
     text-transform: uppercase;
 }
 .logo{
@@ -100,21 +100,30 @@ body{
     border-radius: 10px;
     text-align: center;
     color:  #2b9fd6;
+    opacity: 90%;
     /* box-shadow: 9px 7px 5px #245ded;
     background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%); */
 }
-.btn_calcular{
-    width: 40%;
-    height: 20%;
-    border: 2px #2b9fd6 solid;
+
+.caixa_calculadora input{
+    border: none;
+    width: 50%;
+    text-align: center;
+    padding: 5px;
+    font-size: 18px;
     border-radius: 5px;
-    background-color: transparent;
+    
+}
+
+.btn_calcular{
+    margin-left: 36%;
+    background-color: #1ec1c4;
+    border-color: #1ec1c4;
+    border-radius: 5px;
+    width: 25%;
     margin-top: 2%;
-    margin-left: 30%;
-    color: #2bc2b4;
-    cursor: pointer;
-    border: 2px #2b9fd6 solid;
-    background-color: transparent;
-    color: #2bc2b4;
-    cursor: pointer;
+    text-align: center;
+    font-size: 18px;
+    color: azure;
+    padding: 8px;
 }
