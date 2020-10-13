@@ -3,12 +3,17 @@ body{
 }
 
 .div_cad{
-    width: 25vw;
+width: 25vw;
     height: 58vh;
     align-content: center;
     margin: 5% auto;
     text-align: center;
     position: relative;
+    border-radius: 5px;
+    position: absolute;
+    left: 40%;
+    top: 25%;
+    margin: 0.5% auto;
 }
 
 
@@ -20,6 +25,7 @@ body{
     text-align: center;
     padding: 5px;
     font-size: 18px;
+    border-radius: 5px;
 }
 
 /*Estilização da seta para retornar à página anterior*/
@@ -48,12 +54,15 @@ h2 {
     padding: 8px;
 }
 
-.btnCad{
-    color: azure;
-    background-color: #1ec1c4;
-    padding: 9px;
-    border-radius: 4px;
-    font-size: 20px;
-    text-decoration: none;
+.div_cad .btnCad {
+    width: 40%;
 }
 
+.botoes {
+    margin-left: 8%;
+}
+
+a {
+    color: azure;
+    text-decoration:none;
+}
