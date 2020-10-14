@@ -7,27 +7,27 @@ function lm35(min, max) {
     return random
 }
 
-function trc5000() {
-    min = 0;
-    max = 1;
+// function trc5000() {
+//     min = 0;
+//     max = 1;
     
-    let random = Math.random() * (max - min) + min;
+//     let random = Math.random() * (max - min) + min;
     
-    if (random >= 0.7) {
-        return 1
-    } else if (random <= 0.7) {
-        return 0
-    }
-}
+//     if (random >= 0.7) {
+//         return 1
+//     } else if (random <= 0.7) {  ***** FUNÇÕES DOS SENSORES ******
+//         return 0
+//     }
+// }
 
-function ldr(){
-    min = 0;
-    max = 1023
+// function ldr(){
+//     min = 0;
+//     max = 1023
 
-    let random = Math.floor(Math.random()*(max-min+1)+min);
+//     let random = Math.floor(Math.random()*(max-min+1)+min);
 
-    return random
-}
+//     return random
+// }
 
 function dht11(options){
 
@@ -60,4 +60,4 @@ function dht11(options){
 }
 
 
-module.exports = {lm35, trc5000, ldr, dht11};
+module.exports = {lm35, dht11};

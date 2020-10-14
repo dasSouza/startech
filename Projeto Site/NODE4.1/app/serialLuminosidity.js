@@ -1,41 +1,41 @@
-const sensors = require('./sensors')
+// const sensors = require('./sensors')
 
-class NewArduinoLuminosity {
+// class NewArduinoLuminosity {
 
-    constructor(){
-        this.listData = [];
-		this.__listDataTemp = [];
-		this.listDataHour = [];
-    }
+//     constructor(){
+//         this.listData = [];
+// 		this.__listDataTemp = [];
+// 		this.listDataHour = [];
+//     }
 
-    get List() {
-        return this.listData;
-    }
+//     get List() {
+//         return this.listData;
+//     }
 	
-	get ListHour() {
-		return this.listDataHour;
-	}
+// 	get ListHour() {
+// 		return this.listDataHour;
+// 	}
     
-    SetConnection(){
-        setInterval(() => {
-            let data_float = sensors.ldr();
+//     SetConnection(){
+//         setInterval(() => {
+//             let data_float = sensors.ldr();
 
-            if (this.__listDataTemp.length === 59) {
-                let sum = this.__listDataTemp.reduce((a, b) =>  a + b, 0);
-                this.listDataHour.push((sum / this.__listDataTemp.length).toFixed(2));
-                while(this.__listDataTemp.length > 0) {
-                    this.__listDataTemp.pop();
-                }
-            }
+//             if (this.__listDataTemp.length === 59) {
+//                 let sum = this.__listDataTemp.reduce((a, b) =>  a + b, 0);
+//                 this.listDataHour.push((sum / this.__listDataTemp.length).toFixed(2));
+//                 while(this.__listDataTemp.length > 0) {
+//                     this.__listDataTemp.pop();
+//                 }
+//             }
             
-            this.__listDataTemp.push(data_float);
-            this.listData.push(data_float);
+//             this.__listDataTemp.push(data_float);
+//             this.listData.push(data_float);
 
-        }, 100);
-    }
-}
+//         }, 100);
+//     }
+// }
 
-const serial = new NewArduinoLuminosity();
-serial.SetConnection();
+// const serial = new NewArduinoLuminosity();
+// serial.SetConnection();
 
-module.exports.ArduinoDataLuminosity = {List: serial.List, ListHour:serial.ListHour} 
+// module.exports.ArduinoDataLuminosity = {List: serial.List, ListHour:serial.ListHour} 

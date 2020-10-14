@@ -12,17 +12,17 @@ incrementando com uma string para facilitar a interpretação.*/
 console.log('Temperatura: ' + temperatura.toFixed(2))
 
 //Atribuindo o retorno da função trc5000 a variável chave.
-chave = sensors.trc5000()
+// chave = sensors.trc5000() VARIAVEIS QUE NAO USAREMOS
 
 //Exibindo o valor retornado da função na variável.
-console.log('Switch: ' + chave)
+// console.log('Switch: ' + chave) IDEM
 
 
 //Atribuindo o retorno da função ldr a variável ldr.
-ldr = sensors.ldr()
+// ldr = sensors.ldr() IDEM
 
 //Exibindo o valor retornado da função na variável.
-console.log('Luz: ' + ldr)
+// console.log('Luz: ' + ldr) IDEM
 
 //Atribuindo o retorno da função dht11 a variável dht11.
 /*
@@ -40,7 +40,7 @@ dht11 = sensors.dht11({minHum:50, maxHum:100, minTemp: 18, maxTemp: 23})
 
 
 //Exibindo o valor retornado da função na variável.
-
+// FOI APAGADO O "RETORNO" DAS VARIAVEIS
 console.log('DHT11 - Umidade: ' + dht11[0])
 console.log('DHT11 - Temperatura: ' + dht11[1].toFixed(2))
 
