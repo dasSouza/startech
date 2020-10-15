@@ -1,5 +1,8 @@
 body{
     background-image: url(../images/background-cad.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-attachment: fixed;
 }
 
 .div_cad{
