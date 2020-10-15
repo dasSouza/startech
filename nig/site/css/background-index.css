@@ -1,0 +1,8 @@
+body{
+    background-image: url(../images/background-index.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-attachment: fixed;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    scrollbar-color: #095b81;
+}

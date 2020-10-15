@@ -146,17 +146,23 @@ body{
     color: white;
 }
 
+.container{
+    float: left;
+    width: 90%;
+    margin: 1px 68px 1px 68px;
+}
+
 .claro{
     background-color: rgba(2, 16, 22);
-    opacity: 0.752;
+    /* opacity: 0.752; */
 }
 .escuro{
-    background-color: rgba(255, 255, 255);
-    opacity: 0.452;
+    background-color: rgb(139, 139, 139);
+    /* opacity: 0.452; */
 }
 
 .espaco {
-    margin-top: 5%;
+    margin-top: 2%;
 }
 .container{
     float: left;
@@ -211,7 +217,7 @@ body{
     text-align: center;
     bottom: 0;
     left: 0;
-    position:;
+    /* position:; */
     background-color: rgba(1, 10, 22, 0.452);
     width: 100%;
     float: left;
@@ -240,4 +246,41 @@ body{
 @keyframes desce{
     from{margin-top: -50%;}
     to{margin-top: 0;}
+}
+
+/* 
+    Formulário de Contato
+*/
+.form_contact{
+    margin: -8px 0;
+    color: white;
+    margin-left: 35%;
+    margin-top: 5%;
+    float: left;
+    width: 40%;
+    text-align: -webkit-center;
+    background-color: #272e4d;
+    border-radius: 10px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+
+}
+.padronizado{
+    display: block;
+    padding: 10px 25px;
+    width: 87%;
+    border: black 1px solid;
+    resize: none;
+    border-radius: 10px;
+}
+.form_contact .btn{
+    background-color: #1ec1c4;
+    border-color: #1ec1c4;
+    border-radius: 5px;
+    width: 25%;
+    margin-top: 5%;
+    text-align: center;
+    font-size: 18px;
+    color: #272e4d;
+    padding: 8px;
 }
