@@ -4,10 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Iniciativa 0</title>
-    <link rel="shortcut icon" href="../icone/favicon.png" type="image/x-icon">
-    <link rel="stylesheet" href="../css/style.css">
-    <link rel="stylesheet" href="../css/animations.css">
-    <script src="../js/js.js"></script>
+    <link rel="shortcut icon" href="images/NIG_logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/animations.css">
+    <script src="js/script_css.js"></script>
 </head>
 <body id="corpo" style="position: static;">
     <div class="menu" id="menu" style="display: none;">
@@ -21,10 +21,10 @@
     <div class="tampa" id="tampa" style="display: none;" onclick="closemenu()"></div>
     <div class="header ativo">
         <div class="logo">
-            <img src="../images/NIG_logo.png" alt="Logo"v style="width: 50px">
+            <img src="images/NIG_logo.png" alt="Logo"v style="width: 50px">
         </div>
         <div class="title">
-            <b>NoIGnite</b>
+            <b>N<span style="color: #2b9fd6;">o</span>IG<span style="color:#2b9fd6;">nite</span></b>
         </div>
         <div class="menu_btn" onclick="openmenu()"><b>MENU ☰</b></div>
     </div>
@@ -53,13 +53,29 @@
                 <div class="texto">Um terreno propenso a ter focos de incêndios podem ser da propriedade Governamental ou particular, nossa solução é voltada para áreas de risco, independente de ser público ou privado. Se você está buscando uma solução, nossa empresa é para você!</div>
             </div>
         </div>
+        <div class="container">
+            <form class="form_contact" action="/cadastro" method="POST">
+                <label for="inp_email">Insira seu email:</label>
+                <input type="email" id="inp_email" class="padronizado" required>
+    
+                <label for="inp_nome">Insira seu nome:</label>
+                <input type="text" id="inp_nome" class="padronizado" required>
+    
+                <label for="txt_area">Digite sua mensagem</label>
+                <textarea id="txt_area"  cols="30" rows="10" class="padronizado" required></textarea>
+                <label for="">
+                    <input type="checkbox" checked>Receber notificação por email.
+                </label>
+                <br> <button type="submit" class="btn">Enviar</button>
+            </form>
+        </div>
         <div class="footer">
             <ul>
-                <li><img src="" alt=""><br>@Startech</li>
-                <li><img src="" alt=""><br>Startech</li>
+                <li><img src="" alt=""><br>@NoIgnite</li>
+                <li><img src="" alt=""><br>NoIgnite</li>
                 <li><img src="" alt=""><br>/NoIgnite</li>
             </ul>
-            <p style="float: right: ;;">startech.nig@bandtec.com.br</p>
+            <p style="float: right;">nig@bandtec.com.br</p>
         </div>
     </div>
     
