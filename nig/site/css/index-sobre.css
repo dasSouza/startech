@@ -25,29 +25,29 @@ body{
 }
 .ativo{
     height: 60px;
-    background: rgba(201, 202, 201, 0.425);
+    background-color: rgba(1, 10, 22, 0.452);
 }
 .menu_btn{
     padding: 5px;
     padding-left: 15px;
     padding-right: 15px;
-    border: 2px #adf351 solid;
+    border: 2px #0f2a2a solid;
     border-radius: 5px;
     background-color: transparent;
     float: right;
     margin-top: 0.5%;
     margin-right: 10px;
-    color: #019468;
-    text-shadow: 1px 1px white;
+    color: #aba37c;
+    
     cursor: pointer;
     transition: 0.3s;
 }
 .menu_btn:hover{
-    background-color: rgba(164, 231, 245, 0.404);
-    color: #04d160;
+    background-color: rgb(15, 42, 42, 0.404);
+    color: #da9b35;
 }
 .title{
-    cursor: pointer;
+    cursor: default;
     margin-left: 50px;
     margin-top: 0.3%;
     font-size: 200%;
@@ -56,7 +56,6 @@ body{
     text-transform: uppercase;
 }
 .logo{
-    cursor: pointer;
     margin-left: 10px;
     float: left;
 }
@@ -99,6 +98,7 @@ body{
     width: 100%;
     color: #252525;
 }
+
 .direita{
     margin-right: 5%;
     margin-left: 5%;
@@ -153,12 +153,13 @@ body{
 }
 
 .claro{
-    background-color: rgba(2, 16, 22);
+    background-color: rgb(15, 42, 42, 0.752);
     /* opacity: 0.752; */
 }
 .escuro{
-    background-color: rgb(139, 139, 139);
+    background-color: rgb(218, 155, 53, 0.452);
     /* opacity: 0.452; */
+    
 }
 
 .espaco {
@@ -177,9 +178,8 @@ body{
 }
 
 .hld{
-    width: 900px;
+    width: 90%;
     height: 450px;
-    margin-left: 15%;
 }
 .corpo{
     width: 100%;
@@ -221,6 +221,7 @@ body{
     background-color: rgba(1, 10, 22, 0.452);
     width: 100%;
     float: left;
+    margin-top: 50px;
     color: #ffffff; 
 }
 .footer ul{
@@ -259,7 +260,7 @@ body{
     float: left;
     width: 40%;
     text-align: -webkit-center;
-    background-color: #272e4d;
+    background-color: #448c64;
     border-radius: 10px;
     padding-bottom: 10px;
     padding-top: 10px;
@@ -274,13 +275,13 @@ body{
     border-radius: 10px;
 }
 .form_contact .btn{
-    background-color: #1ec1c4;
-    border-color: #1ec1c4;
+    background-color: #0f2a2a;
+    border-color: #0f2a2a;
     border-radius: 5px;
     width: 25%;
     margin-top: 5%;
     text-align: center;
     font-size: 18px;
-    color: #272e4d;
+    color: #f8f8d0;
     padding: 8px;
 }
