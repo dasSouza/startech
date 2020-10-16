@@ -6,12 +6,19 @@ body{
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     scrollbar-color: #095b81;
 }
+
+a {
+    color: azure;
+    text-decoration: none;
+}
+
 .header{
     top: 0px;
 	left: 0px;
 	width: 100%;
     position: fixed;
     padding-top: 5px;
+    z-index: 5;
 }
 
 .logo_titulo {
@@ -182,9 +189,10 @@ body{
     background-color: rgb(251, 212, 76, 0.700);
 }
 
-/* .espaco {
-    margin-top: 0.1%;
-} */
+.espaco {
+    margin-top: 2%;
+}
+
 .container{
     float: left;
     width: 90%;
@@ -283,8 +291,8 @@ body{
 .form_contact{
     margin: -8px 0;
     color: white;
-    margin-left: 30%;
-    margin-top: 5%;
+    margin-left: 35.5%;
+    margin-top: 2%;
     float: left;
     width: 40%;
     text-align: -webkit-center;
@@ -292,7 +300,6 @@ body{
     border-radius: 10px;
     padding-bottom: 10px;
     padding-top: 10px;
-
 }
 .padronizado{
     display: block;
