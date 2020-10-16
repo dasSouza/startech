@@ -6,12 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="images/motivation.png" type="image/x-icon">
     <link rel="stylesheet" href="css/calculadora.css">
-    <link rel="stylesheet" href="css/animations.css">
     <script src="js/script_css.js"></script>
     <title>Simulador financeiro</title>
 </head>
 
 <body id="corpo" style="position: static;">
+
+    
     <div class="menu" id="menu" style="display: none;">
         <ul class="paginas">
             <li><a href="" class="item_menu"><b>Home</b></a></li>
@@ -23,6 +24,8 @@
     </div>
     <div class="tampa" id="tampa" style="display: none;" onclick="closemenu()"></div>
     <div class="header ativo">
+        
+        <div class="container_header">
         <div class="logo">
             <img src="images/motivation.png" alt="" v style="width: 50px">
         </div>
@@ -31,6 +34,7 @@
         </div>
         <div class="menu_btn" onclick="openmenu()"><b>MENU ☰</b></div>
     </div>
+</div>
     <div class="caixa_calculadora">
         <h2>Insira abaixo a área de seu terreno em m²:</h2>
         <input type="text" id="inp_area" class="inp_calculadora"> <br><br>

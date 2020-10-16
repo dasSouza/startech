@@ -6,6 +6,12 @@ body{
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
+.container_header{
+    float: left;
+    width: 90%;
+    margin: 1px 68px 1px 68px;
+}
+
 .header{
     top: 0px;
 	left: 0px;
