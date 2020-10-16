@@ -94,10 +94,17 @@ body{
 }
 .content{
     padding-bottom: 40px;
-    min-height: 200px;
+    min-height: 250px;
     width: 100%;
     color: #252525;
 }
+
+/*Estilização para a faixa laranja da page Sobre o projeto*/
+.laranja{
+    padding-bottom: 40px;
+    min-height: 550px;
+    width: 100%;
+    color: #252525;}
 
 .direita{
     margin-right: 5%;
@@ -180,6 +187,8 @@ body{
 .hld{
     width: 90%;
     height: 450px;
+    margin-left: 60px;
+    opacity: 0.7;
 }
 .corpo{
     width: 100%;
@@ -255,7 +264,7 @@ body{
 .form_contact{
     margin: -8px 0;
     color: white;
-    margin-left: 35%;
+    margin-left: 30%;
     margin-top: 5%;
     float: left;
     width: 40%;
