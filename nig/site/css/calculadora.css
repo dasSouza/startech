@@ -4,8 +4,8 @@ body{
     background-size: 100%;
     background-attachment: fixed;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    scrollbar-color: #095b81;
 }
+
 .header{
     top: 0px;
 	left: 0px;
@@ -25,48 +25,49 @@ body{
 }
 .ativo{
     height: 60px;
-    background: rgba(16,24,36,0.4);
+    background-color: rgba(1, 10, 22, 0.452);
 }
 .menu_btn{
     padding: 5px;
     padding-left: 15px;
     padding-right: 15px;
-    border: 2px #2b9fd6 solid;
+    border: 2px #0f2a2a solid;
     border-radius: 5px;
     background-color: transparent;
     float: right;
     margin-top: 0.5%;
     margin-right: 10px;
-    color: #2bc2b4;
+    color: #aba37c;
+    
     cursor: pointer;
     transition: 0.3s;
 }
 .menu_btn:hover{
-    background-color: rgba(195,245,255,0.1);
-    color: #31d3c3;
+    background-color: rgb(15, 42, 42, 0.404);
+    color: #da9b35;
 }
 .title{
-    cursor: pointer;
+    cursor: default;
     margin-left: 50px;
     margin-top: 0.3%;
     font-size: 200%;
     float: left;
-    color: azure;
+    color: #6bfcd0;
     text-transform: uppercase;
 }
+
 .logo{
-    cursor: pointer;
     margin-left: 10px;
     float: left;
 }
 .menu{
-    background-color: #272e4d;
+    background-color: #cfd0d3;
     text-align: center;
     position: fixed;
     width: 20%;
     margin-left: 40%;
-    margin-top: 10%;
-    color: #2bc2b4;
+    margin-top: 0%;
+    color: #191a19;
     text-transform: uppercase;
     padding-bottom: 60px;
     border-radius: 10px;
@@ -82,52 +83,49 @@ body{
     margin-left: 20%;
     padding-top: 20px;
     padding-bottom: 20px;
-    border-bottom: 3px #2b9fd6 solid;
+    border-bottom: 3px #205045 solid;
 }
 .item_menu{
-    color: #2b9fd6;
+    color: #323536;
     text-decoration: none;
+    transition: 0.2s;
 }
 .item_menu:hover{
-    color: #4ebef1;
+    color: #7bc5af;
+}
+
+.inp_calculadora{
+    padding: 10px;
+    background-color: rgb(104, 99, 84, 0.300);
+    color: azure;
 }
 
 .caixa_calculadora{
+    padding-top: 5px;
     margin-left: 30%;
-    margin-top: 20%;
-    background-color: #272e4d;
+    margin-top: 10%;
+    background-color:#0f2a2a;
     width: 40%;
     border-radius: 10px;
     text-align: center;
-    color:  #2b9fd6;
+    color: #da9b35;
     opacity: 90%;
     /* box-shadow: 9px 7px 5px #245ded;
     background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%); */
 }
 
-<<<<<<< HEAD
 .caixa_calculadora a{
     color: #4c88e4;
 }
 
 .caixa_calculadora a:hover{
     color: #1681da;
-=======
-.caixa_calculadora input{
-    border: none;
-    width: 50%;
-    text-align: center;
-    padding: 5px;
-    font-size: 18px;
-    border-radius: 5px;
-    
->>>>>>> 7d70e6d6425648e8bd333fc4c74cf8803e769d3a
 }
 
 .btn_calcular{
     margin-left: 36%;
-    background-color: #1ec1c4;
-    border-color: #1ec1c4;
+    background-color: #da9b35;
+    border-color: #0f2a2a;
     border-radius: 5px;
     width: 25%;
     margin-top: 2%;

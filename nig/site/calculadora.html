@@ -4,8 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Calculadora Financeira</title>
-    <link rel="shortcut icon" href="images/NIG_logo.png" type="image/x-icon">
+    <link rel="shortcut icon" href="images/motivation.png" type="image/x-icon">
     <link rel="stylesheet" href="css/calculadora.css">
     <link rel="stylesheet" href="css/animations.css">
     <script src="js/script_css.js"></script>
@@ -15,29 +14,29 @@
 <body id="corpo" style="position: static;">
     <div class="menu" id="menu" style="display: none;">
         <ul class="paginas">
-            <li><a href="index.html" class="item_menu"><b>Home</b></a></li>
+            <li><a href="" class="item_menu"><b>Home</b></a></li>
             <li><a href="sobreprojeto.html" class="item_menu"><b>Projeto</b></a></li>
-            <li><a href="index.html" class="item_menu"><b>Contato</b></a></li>
+            <li><a href="#contato" class="item_menu"><b>Contato</b></a></li>
             <li><a href="calculadora.html" class="item_menu" style="color: #b74a33;"><b>Financeiro</b></a></li>
+            <li><a href="login.html" class="item_menu"><b>Login</b></a></li>
         </ul>
     </div>
     <div class="tampa" id="tampa" style="display: none;" onclick="closemenu()"></div>
     <div class="header ativo">
         <div class="logo">
-            <img src="images/NIG_logo.png" alt="" v style="width: 50px">
+            <img src="images/motivation.png" alt="" v style="width: 50px">
         </div>
         <div class="title">
-            <b>NIG</b>
+            <b>N<span style="color: #2b9fd6;">o</span>IG<span style="color:#2b9fd6;">nite</span></b>
         </div>
         <div class="menu_btn" onclick="openmenu()"><b>MENU ☰</b></div>
     </div>
     <div class="caixa_calculadora">
-        <h2>Coloque a area</h2>
-        <input type="text" id="inp_area" class="inp_calculadora"> <br>
-        <div onclick="Calcular()" class="btn_calcular">Calcular</div>
-        
+        <h2>Insira abaixo a área de seu terreno em m²:</h2>
+        <input type="text" id="inp_area" class="inp_calculadora"> <br><br>
+        <div onclick="Calcular()" class="btn_calcular"><b>Calcular</b></div>
+        <br>
         <div id="resp"></div>
-        
     </div>
 </body>
 
@@ -51,9 +50,9 @@
         var instalacao = ((area / 5) * arduino) * 1.05;   // 5 = distancia de cada arduino 
         //1.05 = taxa da instalação isso represente 5%
         var qtArduino = (area / 5);
-        resp.innerHTML = `  A instalação ficará R$ ${instalacao.toFixed(2)}. <br>
-        E a Quantidade de arduinos será de: ${qtArduino}. <br>
+        resp.innerHTML = `<span style="color: azure";>A instalação ficará R$ ${instalacao.toFixed(2)}. <br>
+        A quantidade de arduínos será de: ${qtArduino}. <br>
         E cada um terá uma distância de 5 metros.
-        Tem duvidas? entre em contato <a href="contato.html">por aqui.</a> `
+        Tem dúvidas? Entre em contato conosco <a href="index.html">clicando aqui</a>.</span> <br/><br/>`
     }
 </script>
