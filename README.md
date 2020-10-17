@@ -1,6 +1,8 @@
 <h1> NoIgnite</h1>
 
-<blockquote class="imgur-embed-pub" lang="en" data-id="a/LvIN1uj" data-context="false" ><a href="//imgur.com/a/LvIN1uj"></a></blockquote><script async src="//s.imgur.com/min/embed.js" charset="utf-8"></script>
+<a href="https://i.imgur.com/1Sg9Wbe.png">
+  <img src="https://i.imgur.com/1Sg9Wbe.png" />
+</a>
 
 <h2> -- Documentação -- </h2>
 
