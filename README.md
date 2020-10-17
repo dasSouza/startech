@@ -1,6 +1,6 @@
-<h1> <span style="color: #b74a33">NIG</span> </h1>
+<h1> NoIgnite</h1>
 
-# Logo do Projeto
+<blockquote class="imgur-embed-pub" lang="en" data-id="a/LvIN1uj" data-context="false" ><a href="//imgur.com/a/LvIN1uj"></a></blockquote><script async src="//s.imgur.com/min/embed.js" charset="utf-8"></script>
 
 <h2> -- Documentação -- </h2>
 
