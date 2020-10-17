@@ -1,4 +1,4 @@
-<h1> Nome do Projeto </h1>
+<h1> <span style="color: #b74a33">NIG</span> </h1>
 
 # Logo do Projeto
 
