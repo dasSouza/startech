@@ -17,10 +17,6 @@ https://docs.google.com/spreadsheets/d/10Lf5bD976ioWVFBCRRe8S17FehcBHazAmolfFC54
 
 Power Point do Projeto:
 
-
-Protótipo do Site Institucional (AdobeXD):
-
-
 <h2> -- Instalação de ambiente NODEJS + API -- </h2>
 
 <h3> Linux: </h3>
