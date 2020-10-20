@@ -1,6 +1,8 @@
-<h1> Nome do Projeto </h1>
+<h1> NoIgnite</h1>
 
-# Logo do Projeto
+<a href="https://i.imgur.com/1Sg9Wbe.png">
+  <img src="https://i.imgur.com/1Sg9Wbe.png" />
+</a>
 
 <h2> -- Documentação -- </h2>
 
@@ -14,10 +16,6 @@ Tabela para Burndown do Projeto (TI):
 https://docs.google.com/spreadsheets/d/10Lf5bD976ioWVFBCRRe8S17FehcBHazAmolfFC54RnE/edit?usp=sharing
 
 Power Point do Projeto:
-
-
-Protótipo do Site Institucional (AdobeXD):
-
 
 <h2> -- Instalação de ambiente NODEJS + API -- </h2>
 
