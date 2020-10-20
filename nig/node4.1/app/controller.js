@@ -42,40 +42,40 @@ router.get('/humidity', (request, response, next) => {
 
 });
 
-router.get('/switch', (request, response, next) => {
+// router.get('/switch', (request, response, next) => {
 
-    let sum = ArduinoDataSwitch.List.reduce((a, b) => a + b, 0);
-    let average = (sum / ArduinoDataSwitch.List.length).toFixed(2);
-	let sumHour = ArduinoDataSwitch.ListHour.reduce((a, b) => a + b, 0);
-	let averageHour = (sumHour / ArduinoDataSwitch.ListHour.length).toFixed(2);
+//     let sum = ArduinoDataSwitch.List.reduce((a, b) => a + b, 0);
+//     let average = (sum / ArduinoDataSwitch.List.length).toFixed(2);
+// 	let sumHour = ArduinoDataSwitch.ListHour.reduce((a, b) => a + b, 0);
+// 	let averageHour = (sumHour / ArduinoDataSwitch.ListHour.length).toFixed(2);
 
-    response.json({
-        data: ArduinoDataSwitch.List,
-        total: ArduinoDataSwitch.List.length,
-        average: isNaN(average) ? 0 : average,
-		dataHour: ArduinoDataSwitch.ListHour,
-		totalHour: ArduinoDataSwitch.ListHour.length,
-		averageHour: isNaN(averageHour) ? 0 : averageHour
-    });
+//     response.json({
+//         data: ArduinoDataSwitch.List,
+//         total: ArduinoDataSwitch.List.length,
+//         average: isNaN(average) ? 0 : average,
+// 		dataHour: ArduinoDataSwitch.ListHour,
+// 		totalHour: ArduinoDataSwitch.ListHour.length,
+// 		averageHour: isNaN(averageHour) ? 0 : averageHour
+//     });
 
-});
+// });
 
-router.get('/luminosity', (request, response, next) => {
+// router.get('/luminosity', (request, response, next) => {
 
-    let sum = ArduinoDataLuminosity.List.reduce((a, b) => a + b, 0);
-    let average = (sum / ArduinoDataLuminosity.List.length).toFixed(2);
-	let sumHour = ArduinoDataLuminosity.ListHour.reduce((a, b) => a + b, 0);
-	let averageHour = (sumHour / ArduinoDataLuminosity.ListHour.length).toFixed(2);
+//     let sum = ArduinoDataLuminosity.List.reduce((a, b) => a + b, 0);
+//     let average = (sum / ArduinoDataLuminosity.List.length).toFixed(2);
+// 	let sumHour = ArduinoDataLuminosity.ListHour.reduce((a, b) => a + b, 0);
+// 	let averageHour = (sumHour / ArduinoDataLuminosity.ListHour.length).toFixed(2);
 
-    response.json({
-        data: ArduinoDataLuminosity.List,
-        total: ArduinoDataLuminosity.List.length,
-        average: isNaN(average) ? 0 : average,
-		dataHour: ArduinoDataLuminosity.ListHour,
-		totalHour: ArduinoDataLuminosity.ListHour.length,
-		averageHour: isNaN(averageHour) ? 0 : averageHour
-    });
+//     response.json({
+//         data: ArduinoDataLuminosity.List,
+//         total: ArduinoDataLuminosity.List.length,
+//         average: isNaN(average) ? 0 : average,
+// 		dataHour: ArduinoDataLuminosity.ListHour,
+// 		totalHour: ArduinoDataLuminosity.ListHour.length,
+// 		averageHour: isNaN(averageHour) ? 0 : averageHour
+//     });
 
-});
+// });
 
 module.exports = router;
