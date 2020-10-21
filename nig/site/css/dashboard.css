@@ -114,10 +114,6 @@ a {
 }
 
 /* CONTAINER INFERIOR */
-table{
-    text-decoration: none;
-    box-decoration-break: unset;
-}
 
 .container_table{
     margin-top:30px;
@@ -128,6 +124,8 @@ table{
     border: 2px solid #448C64;
     border-radius: 10px;
 }
+
+/* TABELA */
 #tbStatus{
     width: 100%;
     height: 250px;
@@ -140,7 +138,11 @@ table{
     
 }
 
+tbody {
+    background-color: azure;
+}
 
+/* FIM TABELA */
 /* Fim Containers */
 
 /* BARRA DE ROLAGEM */
