@@ -1,11 +1,27 @@
 /* GLOBAL */
 
+/* BARRA DE ROLAGEM */
+::-webkit-scrollbar-track {
+    background-color: #000000;
+}
+::-webkit-scrollbar {
+    width: 6px;
+    background: #e22626;
+}
+::-webkit-scrollbar-thumb {
+    background: #b34933;
+}
+
 body {
     background-color: #212427;
 }
 a {
     text-decoration: none;
     box-decoration-break: unset;
+}
+table {
+    padding: 29px 0px 0px 0px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 /* FIM GLOBAL */
 
@@ -84,12 +100,6 @@ a {
     margin-top: 20px;
     margin-left:95px;
 }
-/* .charts{
-    position:absolute;
-    height: 290px;
-    width: 100%;
-    left: 112.02px;
-} */
 
 /* CONTAINER SUPERIOR */
 .container_chart1{
@@ -133,27 +143,16 @@ a {
 }
 
 #tbStatus thead {
-    color: azure;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    
+    color: rgba(255, 255, 255, 0.644);
 }
 
-tbody {
-    background-color: azure;
+#tbStatus tbody {
+    background-color: rgba(255, 255, 255, 0.644);
+    text-align: center;
+    align-items: center;
 }
 
 /* FIM TABELA */
 /* Fim Containers */
 
-/* BARRA DE ROLAGEM */
-
-::-webkit-scrollbar-track {
-    background-color: #000000;
-}
-::-webkit-scrollbar {
-    width: 6px;
-    background: #e22626;
-}
-::-webkit-scrollbar-thumb {
-    background: #b34933;
-}
+/* ----------------PAGINA SETTINGS ----------------*/
