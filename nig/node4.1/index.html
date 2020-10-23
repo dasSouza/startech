@@ -185,7 +185,13 @@
 
             var _lastIndexTemp = this.lastIndexTemp;
             this.lastIndexTemp = obj.data.length;
-            listTemp = obj.data.slice(_lastIndexTemp);
+			listTemp = obj.data.slice(_lastIndexTemp);
+
+			var average = Number(obj.average);
+
+			if (average > 28) {
+				alert(`Alerta de alta temperatura média: ${average.toFixed(2)}ºC`);	
+			}
 
             listTemp.forEach(data => {
                 //Máximo de 60 itens exibidos no gráfico
@@ -275,7 +281,13 @@
 
             var _lastIndexTemp = this.lastIndexTempHumidity;
             this.lastIndexTempHumidity = obj.data.length;
-            listTemp = obj.data.slice(_lastIndexTemp);
+			listTemp = obj.data.slice(_lastIndexTemp);
+
+			var average = Number(obj.average);
+
+			if (average < 30) {
+				alert(`Alerta de baixa umidade média: ${average.toFixed(2)}%`)	
+			}
 
             listTemp.forEach(data => {
                 //Máximo de 60 itens exibidos no gráfico
@@ -293,7 +305,10 @@
 			document.getElementById('averageHourHumidity').textContent = obj.averageHour;
 		} 
 		
+		get_data();
 		get_dataHumidity();
+
+		
 
         setInterval(() => {
 			get_data();
