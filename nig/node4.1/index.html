@@ -36,26 +36,28 @@
 	</div>
 	<div class="containers">
 		<!-- GRAFICO TEMPERATURA -->
-		<section>
-			<b style="color:white">Sensor LM35 - Temperatura</b>
-			<b style="color:white">Média: <label id='average'>0.00</label></b>
-			<b u style="color:white">Média Hora: <label id='averageHour'>0.00</label></b>
-		</section>
-		<div class="container_chart1">
+		
+		<div class="container_chart1" style="padding-top: 20px;">
 				<section>
 					<canvas id="chart"></canvas>
-			<section>
+				</section>
+				<section style="float: right; margin-right: 15px;">
+					<b style="color:white">Sensor LM35 - Temperatura</b>
+					<b style="color:white">Média: <label id='average'>0.00</label></b>
+					<b u style="color:white">Média Hora: <label id='averageHour'>0.00</label></b>
+				</section>
 		</div>
 		<!-- GRAFICO UMIDADE -->
-			<section> <!-- ******AQUI É ONDE IRA MOSTRAR O GRAFICO*****  -->
-				<b>Sensor DHT11 - Umidade</b>
-				<b>Média: <label id='averageHumidity'>0.00</label></b>
-				<b>Média Hora: <label id='averageHourHumidity'>0.00</label></b>
-			</section>
-			<div class="container_chart2">
-			<section>
-				<canvas id="chart-humidity"></canvas>
-			<section>
+			
+			<div class="container_chart2" style="padding-top: 20px;">
+				<section>
+					<canvas id="chart-humidity"></canvas>
+				</section>
+				<section style="float: right; margin-right: 15px; color: white;"> <!-- ******AQUI É ONDE IRA MOSTRAR O GRAFICO*****  -->
+					<b>Sensor DHT11 - Umidade</b>
+					<b>Média: <label id='averageHumidity'>0.00</label></b>
+					<b>Média Hora: <label id='averageHourHumidity'>0.00</label></b>
+				</section>
 			</div>
 		 <!-- TABELA -->
 			<div class="container_table">
@@ -134,7 +136,7 @@
 						scaleLabel: {
 							display: true,
 							labelString: 'Minutos',
-							fontColor: 'white'
+							fontColor: 'gray'
                         },
 						gridLines: {
 							display: true ,
@@ -146,7 +148,7 @@
 						scaleLabel: {
 							display: true,
 							labelString: 'Temperatura',
-							fontColor:'white'
+							fontColor:'gray'
                         },
                         ticks: {
                             beginAtZero:true
@@ -235,6 +237,11 @@
                         ticks: {
                             beginAtZero:true
                         },
+						scaleLabel: {
+							display: true,
+							labelString: 'Minutos',
+							fontColor:'gray',
+                        },
 					gridLines: {
 						display: true ,
 						color: "rgb(68, 140, 100, 0.1)"
@@ -243,7 +250,8 @@
 					yAxes: [{
 						scaleLabel: {
 							display: true,
-							labelString: 'Umidade'
+							labelString: 'Umidade',
+							fontColor:'gray',
                         },
                         ticks: {
                             beginAtZero:true
