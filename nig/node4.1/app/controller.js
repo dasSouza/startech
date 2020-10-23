@@ -1,8 +1,8 @@
 const express = require('express');
 const { ArduinoDataTemp } = require('./newserial')
 const { ArduinoDataHumidity } = require('./serialHumidity')
-const { ArduinoDataSwitch } = require('./serialSwitch')
-const { ArduinoDataLuminosity} = require('./serialLuminosidity')
+// const { ArduinoDataSwitch } = require('./serialSwitch')
+// const { ArduinoDataLuminosity} = require('./serialLuminosidity')
 const router = express.Router();
 
 
