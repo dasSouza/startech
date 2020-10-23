@@ -12,6 +12,10 @@ a {
     text-decoration: none;
 }
 
+p {
+    margin-top: 0;
+}
+
 .header{
     top: 0px;
 	left: 0px;
@@ -103,10 +107,13 @@ a {
     color: #7bc5af;
 }
 .content{
+    float: right;
     padding-bottom: 40px;
     min-height: 370px;
     width: 100%;
     color: #252525;
+    margin-top: 10px;
+
 }
 
 /*Estilização para a faixa laranja da page Sobre o projeto*/
@@ -162,6 +169,17 @@ a {
     font-size: 120%;
     opacity: .9;
     color: white;
+}
+
+.projeto {
+    width: 70%;
+    float: left;
+}
+
+.logo_projeto {
+    width: 29%;
+    float: right;
+    margin-right: -2%;
 }
 
 .membros1{
@@ -319,6 +337,42 @@ a {
     font-size: 18px;
     color: #f8f8d0;
     padding: 8px;
+}
+
+/* TABELA EQUIPE */
+
+.equipe {
+    width: 80%;
+    margin-left: 10%;
+    text-align: center;
+}
+
+.equipe tr th img {
+    margin-top: 9%;
+    width: 34%;
+    border-radius: 100%;
+}
+
+.linked_ico{
+    width: 7%;
+    padding: 2px;
+    border-radius: 8px;
+}
+.linked_ico:hover{
+    filter: brightness(130%);
+}
+
+.github_ico{
+    background-color: white;
+    margin-left: 5%;
+    padding: 2px;
+    width: 6%;
+    border-radius: 11px;
+}
+
+.github_ico:hover{
+    filter: brightness(200%);
+
 }
 
 /* BARRA DE ROLAGEM */
