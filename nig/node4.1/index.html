@@ -190,11 +190,16 @@
             this.lastIndexTemp = obj.data.length;
 			listTemp = obj.data.slice(_lastIndexTemp);
 
+			//Aqui transformamos a variavel average em number pois ela estava sendo puxada como string.
 			var average = Number(obj.average);
 
 			//Implementação do alert para a média da temperatura
-			if (average > 28) {
-				alert(`Alerta de alta temperatura média: ${average.toFixed(2)}ºC`);	
+			if (average > 30) {
+				alert(`Alerta de temperatura em risco: ${average.toFixed(2)}ºC`); // 1º alerta da temperatura
+			}
+
+			if (average > 35) {
+				alert(`Alerta de ALTA temperatura média: ${average.toFixed(2)}ºC`);	// 2º alerta da temperatura (fase crítica)
 			}
 
             listTemp.forEach(data => {
@@ -293,11 +298,16 @@
             this.lastIndexTempHumidity = obj.data.length;
 			listTemp = obj.data.slice(_lastIndexTemp);
 
+			//Aqui transformamos a variavel average em number pois ela estava sendo puxada como string.
 			var average = Number(obj.average);
 
 			//Implementação do alert para a média da UMIDADE
-			if (average < 30) {
-				alert(`Alerta de baixa umidade média: ${average.toFixed(2)}%`)	
+			if (average < 35) {
+				alert(`Alerta de umidade em risco: ${average.toFixed(2)}%`)	// 1º alerta da umidade
+			}
+
+			if (average < 25) {
+				alert(`Alerta de BAIXA umidade média: ${average.toFixed(2)}%`)	// 2º alerta da umidade (fase crítica)
 			}
 
             listTemp.forEach(data => {
