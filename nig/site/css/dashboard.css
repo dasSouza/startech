@@ -137,17 +137,27 @@ table {
 
 /* TABELA */
 #tbStatus{
-    width: 100%;
+    width: 95%;
+    margin-left: 2.5%;
     height: 250px;
     left: 120px;
 }
 
+#tbStatus tr th{
+    border: rgba(255, 255, 255, 0.644) 2px solid;
+}
+#tbStatus tr td{
+    border-left: rgba(255, 255, 255, 0.644) 2px solid;
+    border-right: rgba(255, 255, 255, 0.644) 2px solid;
+    border-bottom: rgba(255, 255, 255, 0.644) 2px solid;
+    color: white;
+}
 #tbStatus thead {
     color: rgba(255, 255, 255, 0.644);
 }
 
 #tbStatus tbody {
-    background-color: rgba(255, 255, 255, 0.644);
+    background-color: transparent;
     text-align: center;
     align-items: center;
 }
