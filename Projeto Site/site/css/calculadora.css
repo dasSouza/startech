@@ -1,0 +1,165 @@
+body{
+    background-image: url(../images/background-index.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-attachment: fixed;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.container_header{
+    float: left;
+    width: 90%;
+    margin: 1px 68px 1px 68px;
+}
+
+.header{
+    top: 0px;
+	left: 0px;
+	width: 100%;
+    position: fixed;
+    padding-top: 5px;
+}
+
+.tampa{
+    top: 0px;
+	left: 0px;
+	width: 100%;
+    position: fixed;
+    padding-top: 5px;
+    height: 100%;
+    z-index: 2;
+    background: rgba(1, 10, 22, 0.678);
+}
+
+.ativo{
+    height: 60px;
+    background-color: rgb(0 0 0);
+}
+
+.menu_btn{
+    padding: 5px;
+    padding-left: 15px;
+    padding-right: 15px;
+    border: 2px #0f2a2a solid;
+    border-radius: 5px;
+    background-color: transparent;
+    float: right;
+    margin-top: 0.5%;
+    margin-right: 10px;
+    color: #aba37c;
+    
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.menu_btn:hover{
+    background-color: rgb(15, 42, 42, 0.404);
+    color: #da9b35;
+}
+
+.title{
+    cursor: default;
+    margin-left: 50px;
+    margin-top: 0.3%;
+    font-size: 200%;
+    float: left;
+    color: #b34933;
+}
+
+.title img{
+    width: 6vh;
+}
+
+.logo{
+    margin-left: 10px;
+    float: left;
+}
+
+.menu{
+    background-color: #cfd0d3;
+    text-align: center;
+    position: fixed;
+    width: 20%;
+    margin-left: 40%;
+    margin-top: 0%;
+    color: #191a19;
+    text-transform: uppercase;
+    padding-bottom: 60px;
+    border-radius: 10px;
+    z-index: 3;
+}
+
+.menu ul{
+    padding-top: 40px;
+    list-style: none;
+    display: inline;
+}
+
+.menu li{
+    width: 60%;
+    margin-left: 20%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border-bottom: 3px #205045 solid;
+}
+
+.item_menu{
+    color: #323536;
+    text-decoration: none;
+    transition: 0.2s;
+}
+
+.item_menu:hover{
+    color: #7bc5af;
+}
+
+.inp_calculadora{
+    padding: 10px;
+    background-color: rgb(104, 99, 84, 0.300);
+    color: azure;
+}
+
+.caixa_calculadora{
+    padding-top: 5px;
+    margin-left: 8%;
+    margin-top: 10%;
+    background-color: #0f2a2a;
+    width: 40%;
+    border-radius: 10px;
+    text-align: center;
+    color: #da9b35;
+    opacity: 90%;
+}
+
+.caixa_calculadora a{
+    color: #4c88e4;
+}
+
+.caixa_calculadora a:hover{
+    color: #1681da;
+}
+
+.btn_calcular{
+    margin-left: 36%;
+    background-color: #da9b35;
+    border-color: #0f2a2a;
+    border-radius: 5px;
+    width: 25%;
+    margin-top: 2%;
+    text-align: center;
+    font-size: 18px;
+    color: azure;
+    padding: 8px;
+}
+
+#resp{
+    background-color: #0f2a2a;
+    display: none;
+    float: right;
+    width: 33%;
+    margin-right: 7%;
+    margin-top: -11%;
+    text-align: center;
+    padding-top: 1%;
+    border-radius: 6%;
+}
