@@ -37,6 +37,7 @@
 	</div>
 	<div class="containers">
 		<!-- GRAFICO TEMPERATURA -->
+<<<<<<< HEAD
 		<section>
 			<b style="color:white">Sensor LM35 - Temperatura</b>
 			<b style="color:white">Média: <label id='average'>0.00</label></b>
@@ -44,23 +45,33 @@
 			<button onclick="teste()">teste log</button>
 		</section>
 		<div class="container_chart1">
+=======
+		
+		<div class="container_chart1" style="padding-top: 20px; float: right;">
+>>>>>>> 8e442ffab0b72ff98a372a411da8a9634687c92f
 				<section>
 					<canvas id="chart"></canvas>
-			<section>
+				</section>
+				<section style="float: right; margin-right: 15px;">
+					<b style="color:white">Sensor LM35 - Temperatura</b>
+					<b style="color:white">Média: <label id='average'>0.00</label></b>
+					<b u style="color:white">Média Hora: <label id='averageHour'>0.00</label></b>
+				</section>
 		</div>
 		<!-- GRAFICO UMIDADE -->
-			<section> <!-- ******AQUI É ONDE IRA MOSTRAR O GRAFICO*****  -->
-				<b>Sensor DHT11 - Umidade</b>
-				<b>Média: <label id='averageHumidity'>0.00</label></b>
-				<b>Média Hora: <label id='averageHourHumidity'>0.00</label></b>
-			</section>
-			<div class="container_chart2">
-			<section>
-				<canvas id="chart-humidity"></canvas>
-			<section>
+			
+			<div class="container_chart2" style="padding-top: 20px; float: right;">
+				<section>
+					<canvas id="chart-humidity"></canvas>
+				</section>
+				<section style="float: right; margin-right: 15px; color: white;"> <!-- ******AQUI É ONDE IRA MOSTRAR O GRAFICO*****  -->
+					<b>Sensor DHT11 - Umidade</b>
+					<b>Média: <label id='averageHumidity'>0.00</label></b>
+					<b>Média Hora: <label id='averageHourHumidity'>0.00</label></b>
+				</section>
 			</div>
 		 <!-- TABELA -->
-			<div class="container_table">
+			<div class="container_table" style=" float: right;">
 				<table id="tbStatus">
 					<thead>
 						<tr>
@@ -136,7 +147,7 @@
 						scaleLabel: {
 							display: true,
 							labelString: 'Minutos',
-							fontColor: 'white'
+							fontColor: 'gray'
                         },
 						gridLines: {
 							display: true ,
@@ -148,7 +159,7 @@
 						scaleLabel: {
 							display: true,
 							labelString: 'Temperatura',
-							fontColor:'white'
+							fontColor:'gray'
                         },
                         ticks: {
                             beginAtZero:true
@@ -190,11 +201,16 @@
             this.lastIndexTemp = obj.data.length;
 			listTemp = obj.data.slice(_lastIndexTemp);
 
+			//Aqui transformamos a variavel average em number pois ela estava sendo puxada como string.
 			var average = Number(obj.average);
 
 			//Implementação do alert para a média da temperatura
-			if (average > 28) {
-				alert(`Alerta de alta temperatura média: ${average.toFixed(2)}ºC`);	
+			if (average > 30) {
+				alert(`Alerta de temperatura em risco: ${average.toFixed(2)}ºC`); // 1º alerta da temperatura
+			}
+
+			if (average > 35) {
+				alert(`Alerta de ALTA temperatura média: ${average.toFixed(2)}ºC`);	// 2º alerta da temperatura (fase crítica)
 			}
 
             listTemp.forEach(data => {
@@ -237,6 +253,11 @@
                         ticks: {
                             beginAtZero:true
                         },
+						scaleLabel: {
+							display: true,
+							labelString: 'Minutos',
+							fontColor:'gray',
+                        },
 					gridLines: {
 						display: true ,
 						color: "rgb(68, 140, 100, 0.1)"
@@ -245,7 +266,8 @@
 					yAxes: [{
 						scaleLabel: {
 							display: true,
-							labelString: 'Umidade'
+							labelString: 'Umidade',
+							fontColor:'gray',
                         },
                         ticks: {
                             beginAtZero:true
@@ -287,11 +309,16 @@
             this.lastIndexTempHumidity = obj.data.length;
 			listTemp = obj.data.slice(_lastIndexTemp);
 
+			//Aqui transformamos a variavel average em number pois ela estava sendo puxada como string.
 			var average = Number(obj.average);
 
 			//Implementação do alert para a média da UMIDADE
-			if (average < 30) {
-				alert(`Alerta de baixa umidade média: ${average.toFixed(2)}%`)	
+			if (average < 35) {
+				alert(`Alerta de umidade em risco: ${average.toFixed(2)}%`)	// 1º alerta da umidade
+			}
+
+			if (average < 25) {
+				alert(`Alerta de BAIXA umidade média: ${average.toFixed(2)}%`)	// 2º alerta da umidade (fase crítica)
 			}
 
             listTemp.forEach(data => {

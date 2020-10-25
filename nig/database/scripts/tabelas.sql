@@ -1,5 +1,5 @@
-CREATE DATABASE BD_init_0;
-USE BD_init_0;
+CREATE DATABASE BD_nig;
+USE BD_nig;
 
 -- 
 CREATE TABLE tbUsuario (
@@ -25,7 +25,7 @@ CREATE TABLE tbLogin_Usuario (
 CREATE TABLE tbSensores (
   id_sensor INT PRIMARY KEY AUTO_INCREMENT,
   nome VARCHAR(5) NOT NULL,
-  zona_area ENUM('norte', 'sul', 'leste', 'oeste', 'centro') NOT NULL,
+  zona_area VARCHAR(7) CHECK(zona_area ='norte' or zona_area= 'sul' or zona_area='leste' or zona_area= 'oeste'or zona_area ='centro'),
   estado_sensor BOOLEAN DEFAULT TRUE,
   horario_primeiro_uso DATETIME NOT NULL
 );
@@ -40,3 +40,6 @@ CREATE TABLE tbDados_Sensores (
 );
 
 describe tbDados_Sensores;
+describe tbSensores;
+describe tbLogin_Usuario;
+describe tbUsuario;

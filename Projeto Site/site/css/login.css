@@ -1,0 +1,66 @@
+.login{
+    
+}
+.div_cad{
+    width: 25vw;
+    height: 58vh;
+    align-content: center;
+    margin: 1% 0% 0% 0%;
+    text-align: center;
+    position: relative;
+    border-radius: 5px;
+    position: absolute;
+    left: 39%;
+    top: 25%;
+}
+
+/*Estilização dos campos input dentro da class pai (div_cad)*/
+.div_cad input{
+    border: none;
+    margin-bottom: 25px;
+    width: 100%;
+    text-align: center;
+    padding: 5px;
+    font-size: 18px;
+    border-radius: 5px;
+}
+
+/*Estilização da seta para retornar à página anterior*/
+.login i{
+    color: aqua;
+    height: -1vh;
+    font-size: 4rem;
+    cursor: pointer;}
+
+.login h2 {
+    text-align: center;
+    font-size: 35px;
+    color: azure;
+    margin-left: 15px;
+}
+
+/*Estilização dos botões dentro da class pai (div_cad)*/
+.div_cad button{
+    background-color: #1ec1c4;
+    border-color: #1ec1c4;
+    border-radius: 5px;
+    width: 25%;
+    margin-top: 5%;
+    text-align: center;
+    font-size: 18px;
+    color: azure;
+    padding: 8px;
+}
+
+.div_cad .btnCad {
+    width: 40%;
+}
+
+.botoes {
+    margin-left: 8%;
+}
+
+a {
+    color: azure;
+    text-decoration:none;
+}

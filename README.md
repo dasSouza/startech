@@ -17,6 +17,8 @@ https://docs.google.com/spreadsheets/d/10Lf5bD976ioWVFBCRRe8S17FehcBHazAmolfFC54
 
 Power Point do Projeto:
 
+Planilha de Riscos: https://docs.google.com/spreadsheets/d/1Lz2TIu41GK_zJflkwuXsFGb0b7Lnp0oLCjB17Jh530Y/edit?usp=sharing
+
 <h2> -- Instalação de ambiente NODEJS + API -- </h2>
 
 <h3> Linux: </h3>
