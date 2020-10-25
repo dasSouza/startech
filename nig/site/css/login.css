@@ -1,3 +1,63 @@
+/*INICIO ANIMAÇÕES */
+.abrir_tela{
+    animation: abrir_tela 1.5s ease-out;
+}
+.fechar_tela{
+    animation: fechar_tela 1.5s ease-out;
+}
+
+/* INICIO ANIMAÇÃO DO FINANCEIRO */
+.abrir_financ{
+    animation: abrir_financ 1.5s ease-out;
+}
+.fechar_financ{
+    animation: fechar_financ 1.5s ease-out;
+}
+.aparecer{
+    animation: aparecer 1s ease-in;
+}
+/*FIM ANIMAÇÃO DO FINANCEIRO */
+
+/* INICIO DA TAMPA? */
+.abrir_tampa{
+    animation: abrir_tampa 1.5s ease-out;
+}
+
+.tampa_direita{
+    right: 40%;
+}
+.fechar_tampa{
+    animation: fechar_tampa 1.5s ease-out;
+}
+.abrir_tampa_cadastro{
+    animation: abrir_tampa_cadastro 0.6s ease-out;
+    right: 50%;
+}
+.fechar_tampa_cadastro{
+    animation: fechar_tampa_cadastro 0.6s ease-out;
+}
+
+.tampa_esquerda {
+    left: 40%;
+    z-index: 2;
+}
+.abrir_tampa_esquerda{
+    animation: abrir_tampa_esquerda 1.5s ease-out;
+}
+
+.fechar_tampa_esquerda{
+    animation: fechar_tampa_esquerda 1.5s ease-out;
+}
+.tampa_esquerda img{
+    transform: rotate(180deg);
+}
+
+/* FIM DA TAMPA */
+
+/* FIM DAS ANIMAÇÕES */
+
+
+/* INICIO LOGIN */
 .login{
     position: fixed;
     height: 100%;
@@ -6,10 +66,10 @@
     top: 0;
     right: 0;
     background-color: rgb(22, 34, 31);
-    /* border-left: 6px solid #b34933; */
     animation: login_abrir 1.5s ease-out;
     float: right;
 }
+
 .div_cad{
     width: 100%;
     height: 58vh;
@@ -21,8 +81,10 @@
     position: absolute;
     top: 25%;
 }
+/* FIM DO LOGIN */
 
-/*Estilização dos campos input dentro da class pai (div_cad)*/
+
+/* INICIO da estilização class pai (div_cad)*/
 .div_cad input{
     border: 1px solid #b34933;
     margin-bottom: 25px;
@@ -35,21 +97,10 @@
     font-size: 20px;
     color: white;
 }
+/* FIM DA ESTILIZAÇÃO DA CLASS PAI */
 
-/*Estilização da seta para retornar à página anterior*/
-.login i{
-    color: darkolivegreen;
-    height: -1vh;
-    font-size: 4rem;
-    cursor: pointer;}
 
-.login h2 {
-    text-align: center;
-    font-size: 35px;
-    color: white;
-}
-
-/*Estilização dos botões dentro da class pai (div_cad)*/
+/* INICIO das estilização dos botões */
 .div_cad button{
     background-color: #549b2c;
     border-radius: 5px;
@@ -79,9 +130,25 @@
     color: #b34933;
     text-decoration:none;
 }
+/* FIM DOS BOTÕES */
 
-/* Cadastro */
 
+/* INICIO estilização da seta */
+.login i{
+    color: darkolivegreen;
+    height: -1vh;
+    font-size: 4rem;
+    cursor: pointer;}
+
+.login h2 {
+    text-align: center;
+    font-size: 35px;
+    color: white;
+}
+/* FIM DA SETA */
+
+
+/* INICIO cadastro */
 .cadastro{
     padding-top: 10%;
     position: fixed;
@@ -107,20 +174,15 @@
     color: white;
     font-variant: small-caps;
 }
+/* FIM DO  cadastro */
 
-/* Classes para animações das telas */
-.abrir_tela{
-    animation: abrir_tela 1.5s ease-out;
-}
-.fechar_tela{
-    animation: fechar_tela 1.5s ease-out;
-}
+
 /* botao de ver senha -- em desenvolvimento */
 .ver img{
     height: 50px;
 }
 
-/* Calculadora financeira */
+/*INICIO CALCULADORA FINANCEIRA */
 .financeiro{
     padding-top: 10%;
     position: fixed;
@@ -161,16 +223,10 @@
     color: white;
     margin-bottom: 0;
 }
-.abrir_financ{
-    animation: abrir_financ 1.5s ease-out;
-}
-.fechar_financ{
-    animation: fechar_financ 1.5s ease-out;
-}
-.aparecer{
-    animation: aparecer 1s ease-in;
-}
 
+/*FIM CALCULADORA FINANCEIRA */
+
+/* TAMPA? */
 .tampa {
     top: 0;
     padding-top: 30%;
@@ -184,17 +240,7 @@
     cursor: pointer;
     transition: 0.5s;
 }
-.abrir_tampa{
-    animation: abrir_tampa 1.5s ease-out;
-}
 
-.tampa_direita{
-    right: 40%;
-}
-
-.fechar_tampa{
-    animation: fechar_tampa 1.5s ease-out;
-}
 .tampa img {
     width: 80%;
     filter: brightness(200%);
@@ -203,26 +249,4 @@
 .tampa:hover{
     filter: brightness(40%);
 }
-
-.abrir_tampa_cadastro{
-    animation: abrir_tampa_cadastro 0.6s ease-out;
-    right: 50%;
-}
-.fechar_tampa_cadastro{
-    animation: fechar_tampa_cadastro 0.6s ease-out;
-}
-
-.tampa_esquerda {
-    left: 40%;
-    z-index: 2;
-}
-.abrir_tampa_esquerda{
-    animation: abrir_tampa_esquerda 1.5s ease-out;
-}
-
-.fechar_tampa_esquerda{
-    animation: fechar_tampa_esquerda 1.5s ease-out;
-}
-.tampa_esquerda img{
-    transform: rotate(180deg);
-}
+/* TAMPA? */
