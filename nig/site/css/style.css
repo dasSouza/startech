@@ -92,6 +92,7 @@ p {
     transition: 0.2s;
     margin-left: 3%;
     margin-right: 3%;
+    cursor: pointer;
 }
 .item_menu:hover{
     color: #7bc5af;

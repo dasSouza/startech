@@ -11,6 +11,33 @@
     to{right: -100%;}
     from{right: 0;}
 }
+@keyframes abrir_tampa{
+    from{right: -100%;}
+    to{right: 40%;}
+}
+@keyframes fechar_tampa{
+    to{right: -100%;}
+    from{right: 40%;}
+}
+
+@keyframes abrir_tampa_esquerda{
+    from{left: -100%;}
+    to{left: 40%;}
+}
+@keyframes fechar_tampa_esquerda{
+    to{left: -100%;}
+    from{left: 40%;}
+}
+
+@keyframes abrir_tampa_cadastro{
+    from{right: -100%;}
+    to{right: 50%;}
+}
+@keyframes fechar_tampa_cadastro{
+    to{right: -100%;}
+    from{right: 50%;}
+}
+
 @keyframes abrir_financ{
     from{left: -100%;}
     to{left: 0;}
@@ -23,3 +50,4 @@
     from{opacity: 0%;}
     to{opacity: 100%;}
 }
+

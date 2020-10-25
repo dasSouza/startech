@@ -6,8 +6,9 @@
     top: 0;
     right: 0;
     background-color: rgb(22, 34, 31);
-    border-left: 6px solid #b34933;
+    /* border-left: 6px solid #b34933; */
     animation: login_abrir 1.5s ease-out;
+    float: right;
 }
 .div_cad{
     width: 100%;
@@ -90,7 +91,6 @@
     top: 0;
     right: 0;
     background-color: rgb(22, 34, 31);
-    border-left: 6px solid #b34933;
 }
 .cadastro select{
     
@@ -130,7 +130,6 @@
     top: 0;
     left: 0;
     background-color: rgb(22, 34, 31);
-    border-right: 6px solid #b34933;
 }
 .resp{
     width: 80%;
@@ -170,4 +169,60 @@
 }
 .aparecer{
     animation: aparecer 1s ease-in;
+}
+
+.tampa {
+    top: 0;
+    padding-top: 30%;
+    text-align: center;
+    position: fixed;
+    z-index: 2;
+    background-color: #b34933;
+    height: 100%;
+    width: 2%;
+    float: right;
+    cursor: pointer;
+    transition: 0.5s;
+}
+.abrir_tampa{
+    animation: abrir_tampa 1.5s ease-out;
+}
+
+.tampa_direita{
+    right: 40%;
+}
+
+.fechar_tampa{
+    animation: fechar_tampa 1.5s ease-out;
+}
+.tampa img {
+    width: 80%;
+    filter: brightness(200%);
+}
+
+.tampa:hover{
+    filter: brightness(40%);
+}
+
+.abrir_tampa_cadastro{
+    animation: abrir_tampa_cadastro 0.6s ease-out;
+    right: 50%;
+}
+.fechar_tampa_cadastro{
+    animation: fechar_tampa_cadastro 0.6s ease-out;
+}
+
+.tampa_esquerda {
+    left: 40%;
+    z-index: 2;
+}
+.abrir_tampa_esquerda{
+    animation: abrir_tampa_esquerda 1.5s ease-out;
+}
+
+.fechar_tampa_esquerda{
+    animation: fechar_tampa_esquerda 1.5s ease-out;
+}
+.tampa_esquerda img{
+    transform: rotate(180deg);
 }
