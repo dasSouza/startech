@@ -1,14 +1,9 @@
-body{
-    scroll-behavior: smooth;
-}
-#corpo_sobre{
-    background-image: url(../images/background-sobre.jpg);
-    background-repeat: no-repeat;
-    background-size: 100%;
-    background-attachment: fixed;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    scrollbar-color: #095b81;
-}
+/* ÍNICIO GLOBAL */
+
+body{scroll-behavior: smooth;}
+p {margin-top: 0;}
+a {color: azure; text-decoration: none;}
+
 #corpo_index{
     background-image: url(../images/background-index.png);
     background-repeat: no-repeat;
@@ -18,15 +13,21 @@ body{
     scrollbar-color: #095b81;
 }
 
-a {
-    color: azure;
-    text-decoration: none;
+/* FIM GLOBAL */
+
+/* ÍNICIO PÁGINA SOBRE */
+#corpo_sobre {
+    background-image: url(../images/background-sobre.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-attachment: fixed;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    scrollbar-color: #095b81;
 }
 
-p {
-    margin-top: 0;
-}
+/* FIM PÁGINA SOBRE */
 
+/* ÍNICIO MENU / HEADER */
 .header{
     top: 0px;
 	left: 0px;
@@ -37,15 +38,9 @@ p {
     border-bottom: 3px solid #b34933;
 }
 
-.logo_titulo {
-    margin: 1px;
-}
+.logo_titulo {margin: 1px;}
+.ativo{height: 60px; background-color: rgb(0 0 0);}
 
-.ativo{
-    height: 60px;
-    background-color: rgb(0 0 0);
-
-}
 .menu_btn{
     float: right;
     padding-bottom: 0.3%;
@@ -62,11 +57,8 @@ p {
     transition: 0.3s;
     font-weight: bolder;
 }
-.menu_btn:hover{
-    background-color: rgba(135, 202, 202, 0.404);
-    border-color: orange;
-    color: #da9b35;
-}
+.menu_btn:hover{background-color: rgba(135, 202, 202, 0.404); border-color: orange; color: #da9b35;}
+
 .title{
     cursor: default;
     font-size: 200%;
@@ -75,16 +67,9 @@ p {
     margin-top: 0.2%;
     margin-left: 2%;
 }
-.logo{
-    margin-left: 10px;
-    float: left;
-}
-.menu{
-    width: 20%;
-    float: right;
-    margin-top: 1.2%;
-    overflow: hidden;
-}
+.logo{margin-left: 10px; float: left;}
+
+.menu{width: 20%; float: right; margin-top: 1.2%; overflow: hidden;}
 
 .item_menu{
     color: #6b6b6b;
@@ -94,9 +79,11 @@ p {
     margin-right: 3%;
     cursor: pointer;
 }
-.item_menu:hover{
-    color: #7bc5af;
-}
+.item_menu:hover{color: #7bc5af;}
+
+/* FIM MENU */
+
+/* ESTILIZAÇÃO DAS FAIXAS COLORIDAS */
 .content{
     float: right;
     padding-bottom: 40px;
@@ -104,22 +91,16 @@ p {
     width: 100%;
     color: #252525;
     margin-top: 10px;
-
 }
-
-/*Estilização para a faixa laranja da page Sobre o projeto*/
-.laranjaProjeto{
-    padding-bottom: 40px;
-    min-height: 550px;
-    width: 100%;
-    color: #252525;}
-
-    
+ 
+/* INICIO ESTILIZAÇÃO NA PÁGINA SOBRE */
 .direita{
     margin-right: 5%;
     margin-left: 5%;
     text-align: justify;
 }
+/* FIM ESTILIZAÇÃO NA PÁGINA SOBRE */
+
 .esquerda{
     margin-right: 5%;
     margin-left: 5%;
@@ -150,46 +131,23 @@ p {
     margin-bottom: 3%;
 }
 
-.titulo.esquerda{
-    margin-left: 7%;
-}
-.titulo.direita{
-    margin-right: 7%;
-}
-.texto{
-    font-variant: small-caps;
-    font-size: 120%;
-    color: white;
-}
+.titulo.esquerda{margin-left: 7%;}
 
-.projeto {
-    width: 70%;
-    float: left;
-}
+.titulo.direita{margin-right: 7%;}
 
-.logo_projeto {
-    width: 29%;
-    float: right;
-    margin-right: -2%;
-}
+.texto{font-variant: small-caps; font-size: 120%; color: white;}
 
-.membros1{
-    text-align: justify;
-}
+.projeto {width: 70%; float: left;}
 
-.container_header{
-    float: left;
-    width: 90%;
-    margin: 1px 68px 1px 68px;
-}
+.logo_projeto {width: 29%; float: right; margin-right: -2%;}
 
-.claro{
-    background-color: #000000;    /* opacity: 0.752; */
-}
-.escuro{
-    background-color: #173311;
-    /* opacity: 0.452; */ 
-}
+.membros1{text-align: justify;}
+
+.container_header{float: left; width: 90%; margin: 1px 68px 1px 68px;}
+
+.claro{background-color: #000000;}
+
+.escuro{background-color: #173311;}
 
 .areaAtuacao{
     width: 25%;
@@ -198,21 +156,11 @@ p {
     background-color: rgb(251, 212, 76, 0.700);
 }
 
-.espaco {
-    margin-top: 2%;
-}
+.espaco {margin-top: 2%;}
 
-.container{
-    float: left;
-    width: 90%;
-}
-.imagem{
-    margin-top: 0.2%;
-    float: left;
-    min-width: 10%;
-    max-width: 30%;
-    height: 230px;
-}
+.container{float: left; width: 90%;}
+
+.imagem{margin-top: 0.2%; float: left; min-width: 10%; max-width: 30%; height: 230px;}
 
 .hld{
     width: 55%;
@@ -238,45 +186,31 @@ p {
     animation: titul 3s ease-out;
     animation-delay: 0.5s;
 }
-.ani_esquerda{
-    margin-left: 35%;
-    float: left;
-}
-.ani_direita{
-    margin-right: 35%;
-    float: right;
-}
-#inicio{
-    font-size: 200%;
-}
-.footer{
-    font-variant: small-caps;
-    text-align: center;
-    bottom: 0;
-    left: 0;
-    /* position:; */
-    background-color: rgba(1, 10, 22, 0.452);
-    width: 100%;
-    float: left;
-    margin-top: 50px;
-    color: #ffffff; 
-}
-.footer ul{
-    width: 90%;    
-    list-style: none;
-    display: inline-flex;
-}
-.footer ul li{
-    width: 32%;
+.ani_esquerda{margin-left: 35%; float: left;}
+
+.ani_direita{margin-right: 35%; float: right;}
+
+#inicio{font-size: 200%;}
+
+/* ÍNICIO TABELA EQUIPE */
+.equipe {width: 80%; margin-left: 10%; text-align: center;}
+.equipe tr th img {margin-top: 9%; width: 34%; border-radius: 100%;}
+
+.linked_ico{width: 7%; padding: 2px; border-radius: 8px;}
+.linked_ico:hover{filter: brightness(130%);}
+
+.github_ico{
+    background-color: white;
+    margin-left: 5%;
+    padding: 2px;
+    width: 6%;
+    border-radius: 11px;
 }
 
-.footer img{
-    width: 50px;
-    height: 50px;
-}
-/* 
-    Formulário de Contato
-*/
+.github_ico:hover{filter: brightness(200%);}
+/* FIM TABELA EQUIPE */
+
+/* ÍNICIO FORMULÁRIO CONTATO */
 .form_contact{
     margin: -8px 0;
     color: white;
@@ -290,7 +224,7 @@ p {
     padding-bottom: 10px;
     padding-top: 10px;
 }
-.padronizado{
+.campoEntradaForm{
     display: block;
     padding: 10px 25px;
     width: 80%;
@@ -309,52 +243,28 @@ p {
     color: #f8f8d0;
     padding: 8px;
 }
+/* FIM FORMULÁRIO CONTATO */
 
-/* TABELA EQUIPE */
+/* ÍNICIO BARRA DE ROLAGEM */
+::-webkit-scrollbar-track {background-color: #000000;}
+::-webkit-scrollbar {width: 6px; background: #e22626;}
+::-webkit-scrollbar-thumb {background: #b34933;}
+/* FIM BARRA DE ROLAGEM */
 
-.equipe {
-    width: 80%;
-    margin-left: 10%;
+/* ÍNICIO FOOTER */
+.footer{
+    font-variant: small-caps;
     text-align: center;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(1, 10, 22, 0.452);
+    width: 100%;
+    float: left;
+    margin-top: 50px;
+    color: #ffffff; 
 }
+.footer ul{width: 90%; list-style: none; display: inline-flex;}
+.footer ul li{width: 32%;}
 
-.equipe tr th img {
-    margin-top: 9%;
-    width: 34%;
-    border-radius: 100%;
-}
-
-.linked_ico{
-    width: 7%;
-    padding: 2px;
-    border-radius: 8px;
-}
-.linked_ico:hover{
-    filter: brightness(130%);
-}
-
-.github_ico{
-    background-color: white;
-    margin-left: 5%;
-    padding: 2px;
-    width: 6%;
-    border-radius: 11px;
-}
-
-.github_ico:hover{
-    filter: brightness(200%);
-
-}
-
-/* BARRA DE ROLAGEM */
-
-::-webkit-scrollbar-track {
-    background-color: #000000;
-}
-::-webkit-scrollbar {
-    width: 6px;
-    background: #e22626;
-}
-::-webkit-scrollbar-thumb {
-    background: #b34933;
-}
+.footer img{width: 50px; height: 50px;}
+/* FIM FOOTER */
