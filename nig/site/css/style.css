@@ -1,3 +1,6 @@
+body{
+    scroll-behavior: smooth;
+}
 #corpo_sobre{
     background-image: url(../images/background-sobre.jpg);
     background-repeat: no-repeat;
@@ -31,6 +34,7 @@ p {
     position: fixed;
     padding-top: 5px;
     z-index: 5;
+    border-bottom: 3px solid #b34933;
 }
 
 .logo_titulo {
@@ -179,8 +183,7 @@ p {
 }
 
 .claro{
-    background-color: #000000;    
-    /* opacity: 0.752; */
+    background-color: #000000;    /* opacity: 0.752; */
 }
 .escuro{
     background-color: #173311;
@@ -244,10 +247,6 @@ p {
 }
 #inicio{
     font-size: 200%;
-}
-@keyframes titul{
-    from{width: 0;}
-    to{width: 30%;}
 }
 .footer{
     font-variant: small-caps;
