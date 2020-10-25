@@ -179,7 +179,8 @@ p {
 }
 
 .claro{
-    background-color: #041509;    /* opacity: 0.752; */
+    background-color: #000000;    
+    /* opacity: 0.752; */
 }
 .escuro{
     background-color: #173311;
