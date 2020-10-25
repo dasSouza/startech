@@ -21,7 +21,7 @@ body{
     padding-bottom: 2%;
     border-bottom: 2px solid #9dc7e041;
     border-top: 2px solid #9dc7e049;
-    }
+}
 
 
 .div_cad h2 {
@@ -51,7 +51,8 @@ i{
     color: aqua;
     height: -1vh;
     font-size: 4rem;
-    cursor: pointer;}
+    cursor: pointer;
+}
 
 
 .div_cad button {

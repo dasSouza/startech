@@ -72,50 +72,50 @@ table {
     box-sizing: border-box;
 }
 
-/* POSIÇÃO DA LOGO */
+
 
 .logo {
     position: absolute;
-    top: 1%;
+    top: 1%;    /* POSIÇÃO DA LOGO */
     margin-left: 5%;
 }
 
 /* FIM LOGO */
 
-/* ICONE LOGOUT */
+
 .logo_icons .icon_logout img{
     position: absolute;
-    width: 50%;
+    width: 50%;        /* ICONE LOGOUT */
     margin-left: 27px;
     bottom: 10px;
 }
 
-/* FIM ICONE LOGOUT */
-
 /* FIM BARRA LATERAL */
 
-/* Início Containers */
+
+
+/* INÍCIO CONTAINERS */
 
 .containers{
     margin-top: 20px;
     margin-left:95px;
 }
 
-/* CONTAINER SUPERIOR */
+
 .container_chart1{
     margin-top:5px;
     width: 100%;
-    min-height: 290px;
+    min-height: 290px;   /* CONTAINER SUPERIOR */
     left: 112.02px;
     background-color: #282C31;
     border: 2px solid #448C64;
     border-radius: 10px;
 }
 
-/* CONTAINER MEIO */
+
 .container_chart2{
     margin-top:5px;
-    width: 100%;
+    width: 100%;      /* CONTAINER MEIO */
     min-height: 290px;
     left: 112.02px;
     background-color: #282C31;
@@ -123,11 +123,11 @@ table {
     border-radius: 10px;
 }
 
-/* CONTAINER INFERIOR */
+
 
 .container_table{
     margin-top:30px;
-    width: 100%;
+    width: 100%;           /* CONTAINER INFERIOR */
     height: 290px;
     left: 112.02px;
     background-color: #282C31;
@@ -136,6 +136,7 @@ table {
 }
 
 /* TABELA */
+
 #tbStatus{
     width: 95%;
     margin-left: 2.5%;
