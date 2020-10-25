@@ -11,3 +11,15 @@
     to{right: -100%;}
     from{right: 0;}
 }
+@keyframes abrir_financ{
+    from{left: -100%;}
+    to{left: 0;}
+}
+@keyframes fechar_financ{
+    to{left: -100%;}
+    from{left: 0;}
+}
+@keyframes aparecer{
+    from{opacity: 0%;}
+    to{opacity: 100%;}
+}

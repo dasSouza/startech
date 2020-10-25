@@ -1,5 +1,6 @@
 var aberto_cadastro = false;
 var aberto_login = false;
+var aberto_financeiro = false;
 function cadastrar(){
     if(!aberto_cadastro){
         tela_cadastro.classList.add(`abrir_tela`);
@@ -42,5 +43,21 @@ function logar(){
         tela_login.style.display = `none`
         aberto_login = false;
     }, 1200)
+    }
+}
+function calc_financeiro(){
+    if(!aberto_financeiro){
+        tela_financeiro.classList.add(`abrir_financ`);
+        tela_financeiro.classList.remove(`fechar_financ`);
+        tela_financeiro.style.display = `block`
+        aberto_financeiro = true
+    }
+    else{
+        tela_financeiro.classList.remove(`abrir_financ`);
+        tela_financeiro.classList.add(`fechar_financ`);
+        setTimeout(function(){
+            tela_financeiro.style.display = `none`
+            aberto_financeiro = false
+        }, 1200)
     }
 }

@@ -1,3 +1,6 @@
+body{
+    scroll-behavior: smooth;
+}
 #corpo_sobre{
     background-image: url(../images/background-sobre.jpg);
     background-repeat: no-repeat;
