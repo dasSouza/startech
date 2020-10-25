@@ -1,0 +1,13 @@
+
+@keyframes titul{
+    from{width: 0;}
+    to{width: 30%;}
+}
+@keyframes abrir_tela{
+    from{right: -100%;}
+    to{right: 0;}
+}
+@keyframes fechar_tela{
+    to{right: -100%;}
+    from{right: 0;}
+}

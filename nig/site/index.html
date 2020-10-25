@@ -6,22 +6,80 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>NIG</title>
     <link rel="shortcut icon" href="images/logo2.png" type="image/x-icon">
-    <link rel="stylesheet" href="css/index-sobre.css">
-    <link rel="stylesheet" href="css/background-index.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/login.css">
+    <link rel="stylesheet" href="css/animations.css">
     <script src="js/script_css.js"></script>
 </head>
 
-<body id="corpo" style="position: static;">
-    <div class="menu" id="menu" style="display: none;">
-        <ul class="paginas">
-            <li><a href="" class="item_menu" style="color: #b74a33;"><b>Home</b></a></li>
-            <li><a href="sobreprojeto.html" class="item_menu"><b>Projeto</b></a></li>
-            <!-- <li><a href="#contato" class="item_menu"><b>Contato</b></a></li> -->
-            <li><a href="calculadora.html" class="item_menu"><b>Financeiro</b></a></li>
-            <li><a href="login.html" class="item_menu"><b>Login</b></a></li>
-        </ul>
+<body id="corpo_index" style="position: static;">
+    <div class="login" id="tela_login" style="display: none;">
+        <a href="index.html"><i class="fas fa-arrow-left" style="color: #1ec1c4;"></i></a>
+        <div class="div_cad">
+            <form action="" method="post">
+                <h2>Login</h2>
+                <p>
+                    <label for="login_email">Email:</label><br>
+                    <input id="login_email" type="text" name="email" placeholder="Insira seu e-mail:" required>
+                </p>
+                <p>
+                    <label for="login_senha">Senha:</label><br>
+                    <input id="login_senha" type="password" name="senha" placeholder="Insira sua senha:" required>
+                </p>
+                <div class="botoes">
+                    <a href="../node4.1/index.html"><button type="submit"> Entrar</button></a><br>
+                    <div class="btnCad">Ainda não tem conta?<a onclick="cadastrar()">Cadastre-se</a></div>
+                </div>
+            </form>
+        </div>
     </div>
-    <div class="tampa" id="tampa" style="display: none;" onclick="closemenu()"></div>
+    <div class="cadastro div_cad" id="tela_cadastro" style="display: none;">
+        <form action="" method="post">
+            <h2>Cadastre-se</h2>
+            <input type="text" name="nome" placeholder="Nome completo" required >
+            <input type="tel" name="telefone" placeholder="(00) 0000-0000"><br>	    
+            <input type="text" name="email" placeholder="Insira seu e-mail" required>
+            <input type="text" name="conf_email" placeholder="Confirme o e-mail" required><br>
+            <input type="password" name="senha" placeholder="Insira sua senha" required>
+            <input type="password" name="conf_senha" placeholder="Confirme sua senha" required><br>
+            <input type="text" name="cidade" placeholder="Cidade em que mora">
+            <select id="uf">
+                <option value="" disabled selected> UF </option>
+                <option value="AC">Acre</option>
+                <option value="AL">Alagoas</option>
+                <option value="AP">Amapá</option>
+                <option value="AM">Amazonas</option>
+                <option value="BA">Bahia</option>
+                <option value="CE">Ceará</option>
+                <option value="DF">Distrito Federal</option>
+                <option value="ES">Espírito Santo</option>
+                <option value="GO">Goiás</option>
+                <option value="MA">Maranhão</option>
+                <option value="MT">Mato Grosso</option>
+                <option value="MS">Mato Grosso do Sul</option>
+                <option value="MG">Minas Gerais</option>
+                <option value="PA">Pará</option>
+                <option value="PB">Paraíba</option>
+                <option value="PR">Paraná</option>
+                <option value="PE">Pernambuco</option>
+                <option value="PI">Piauí</option>
+                <option value="RJ">Rio de Janeiro</option>
+                <option value="RN">Rio Grande do Norte</option>
+                <option value="RS">Rio Grande do Sul</option>
+                <option value="RO">Rondônia</option>
+                <option value="RR">Roraima</option>
+                <option value="SC">Santa Catarina</option>
+                <option value="SP">São Paulo</option>
+                <option value="SE">Sergipe</option>
+                <option value="TO">Tocantins</option>
+            </select> <br>
+           
+            <div class="botoes">
+            <button type="submit" onclick="enviar()">Cadastrar</button>
+            </div>
+
+        </form>
+    </div>
     <div class="header ativo">
 
         <div class="container_header">
@@ -32,7 +90,12 @@
             <div class="title">
                 <b>N<span style="color: #325f47;">o</span>IG<span style="color:#325f47;">nite</span></b>
             </div>
-            <div class="menu_btn" onclick="openmenu()"><b>MENU ☰</b></div>
+            <a onclick="logar()"><div class="menu_btn">Login</div></a>
+            <div class="menu" id="menu">
+                    <a href="index.html" class="item_menu" style="color: #b74a33;"><b>Home</b></a>
+                    <a href="sobre.html" class="item_menu"><b>Projeto</b></a>
+                    <a href="calculadora.html" class="item_menu"><b>Financeiro</b></a>
+            </div>
         </div>
     </div>
     </div>
