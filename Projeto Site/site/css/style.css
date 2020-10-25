@@ -1,5 +1,13 @@
-body{
-    background-image: url(../images/queimada3.jpg);
+#corpo_sobre{
+    background-image: url(../images/background-sobre.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-attachment: fixed;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    scrollbar-color: #095b81;
+}
+#corpo_index{
+    background-image: url(../images/background-index.png);
     background-repeat: no-repeat;
     background-size: 100%;
     background-attachment: fixed;
@@ -146,7 +154,6 @@ p {
 .texto{
     font-variant: small-caps;
     font-size: 120%;
-    opacity: .9;
     color: white;
 }
 
@@ -172,10 +179,10 @@ p {
 }
 
 .claro{
-    background-color: #041509f5;    /* opacity: 0.752; */
+    background-color: #041509;    /* opacity: 0.752; */
 }
 .escuro{
-    background-color: #173311f2;
+    background-color: #173311;
     /* opacity: 0.452; */ 
 }
 
@@ -203,11 +210,12 @@ p {
 }
 
 .hld{
-    /* width: 90%; */
-    height: 450px;
+    width: 55%;
     margin-left: 60px;
-    opacity: 0.7;
-    margin: -1% 23%;
+    border-radius: 15%;
+    border-right: #059ee6 solid 3px;
+    border-left: #059ee6 solid 3px;
+    margin-left: 22.5%;
 }
 .corpo{
     width: 100%;

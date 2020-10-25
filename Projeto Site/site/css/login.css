@@ -1,18 +1,8 @@
-body{
-    background-image: url(../images/background-cad.png);
-    background-repeat: no-repeat;
-    background-size: 100%;
-    background-attachment: fixed;
+.login{
+    
 }
-
-.container_header{
-    float: left;
-    width: 90%;
-    margin: 1px 4px 1px 4px;
-}
-
 .div_cad{
-width: 25vw;
+    width: 25vw;
     height: 58vh;
     align-content: center;
     margin: 1% 0% 0% 0%;
@@ -23,7 +13,6 @@ width: 25vw;
     left: 39%;
     top: 25%;
 }
-
 
 /*Estilização dos campos input dentro da class pai (div_cad)*/
 .div_cad input{
@@ -37,13 +26,13 @@ width: 25vw;
 }
 
 /*Estilização da seta para retornar à página anterior*/
-i{
+.login i{
     color: aqua;
     height: -1vh;
     font-size: 4rem;
     cursor: pointer;}
 
-h2 {
+.login h2 {
     text-align: center;
     font-size: 35px;
     color: azure;
