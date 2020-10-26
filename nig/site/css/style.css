@@ -121,6 +121,12 @@ a {color: azure; text-decoration: none;}
 }
 .ani_esquerda{margin-left: 35%; float: left;}
 
+.alinhamento{
+    margin-right: 5%;
+    margin-left: 5%;
+    text-align: justify;
+}
+
 .ani_direita{margin-right: 35%; float: right;}
 
 #inicio{font-size: 200%;}
