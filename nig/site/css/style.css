@@ -19,6 +19,16 @@ a {color: azure; text-decoration: none;}
     width: 100%;
     position: absolute;
 }
+.corpo{
+    width: 100%;
+    font-variant: small-caps;
+    text-shadow: 1px 1px rgba(1, 10, 22, 0.678);
+    color: #ffffff;
+    margin-top: 12%;
+    font-size: 150%;
+    text-align: center;
+}
+.container{float: left; width: 90%;}
 /* FIM GLOBAL */
 
 /* ÍNICIO PÁGINA SOBRE */
@@ -30,13 +40,18 @@ a {color: azure; text-decoration: none;}
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     scrollbar-color: #095b81;
 }
+.direita{margin-right: 5%; margin-left: 5%; text-align: justify;}
 
-.direita{
-    margin-right: 5%;
-    margin-left: 5%;
-    text-align: justify;
-}
 .areaAtuacao{width: 25%; font-size: 15px; padding: 10px; background-color: rgb(251, 212, 76, 0.700);}
+
+.hld{
+    width: 55%;
+    margin-left: 60px;
+    border-radius: 15%;
+    border-right: #059ee6 solid 3px;
+    border-left: #059ee6 solid 3px;
+    margin-left: 22.5%;
+}
 /* FIM PÁGINA SOBRE */
 
 /* ÍNICIO MENU / HEADER */
@@ -49,7 +64,6 @@ a {color: azure; text-decoration: none;}
     z-index: 5;
     border-bottom: 3px solid #b34933;
 }
-
 .container_header{float: left; width: 90%; margin: 1px 68px 1px 68px;}
 
 .logo_titulo {margin: 1px;}
@@ -97,62 +111,7 @@ a {color: azure; text-decoration: none;}
 
 /* FIM MENU */
 
-/* ÍNICIO ESTILIZAÇÃO DAS FAIXAS COLORIDAS */
-.content{
-    float: right;
-    padding-bottom: 40px;
-    min-height: 370px;
-    width: 100%;
-    color: #252525;
-    margin-top: 10px;
-}
-
-.esquerda{margin-right: 5%; margin-left: 5%; text-align: justify;} /* Espaçamento do texto na lateral esquerda */
-
-.titulo{
-    font-variant: small-caps;
-    font-size: 200%;
-    padding-top: 3%;
-    margin-bottom: 3%;
-    color: white;
-    font-weight: bold;
-}
-
-.texto{font-variant: small-caps; font-size: 120%; color: white;}
-
-.projeto {width: 70%; float: left;}
-
-.logo_projeto {width: 29%; float: right; margin-right: -2%;}
-
-.membros{text-align: justify;}
-
-.fundoEscuro{background-color: #000000;}
-
-.fundoVerde{background-color: #173311;}
-
-.espaco {margin-top: 2%;}
-
-.container{float: left; width: 90%;}
-
-.imagem{margin-top: 0.2%; float: left; min-width: 10%; max-width: 30%; height: 230px;}
-
-.hld{
-    width: 55%;
-    margin-left: 60px;
-    border-radius: 15%;
-    border-right: #059ee6 solid 3px;
-    border-left: #059ee6 solid 3px;
-    margin-left: 22.5%;
-}
-.corpo{
-    width: 100%;
-    font-variant: small-caps;
-    text-shadow: 1px 1px rgba(1, 10, 22, 0.678);
-    color: #ffffff;
-    margin-top: 12%;
-    font-size: 150%;
-    text-align: center;
-}
+/* ÍNICIO SECTION CAPA */
 .linha{
     width: 30%;
     background-color: #ffffff;
@@ -165,6 +124,37 @@ a {color: azure; text-decoration: none;}
 .ani_direita{margin-right: 35%; float: right;}
 
 #inicio{font-size: 200%;}
+/* FIM SECTION CAPA */
+
+/* ÍNICIO ESTILIZAÇÃO DAS FAIXAS COLORIDAS */
+.content{
+    float: right;
+    padding-bottom: 40px;
+    min-height: 370px;
+    width: 100%;
+    color: #252525;
+    margin-top: 10px;
+}
+.esquerda{margin-right: 5%; margin-left: 5%; text-align: justify;} /* Espaçamento do texto na lateral esquerda */
+
+.titulo{
+    font-variant: small-caps;
+    font-size: 200%;
+    padding-top: 3%;
+    margin-bottom: 3%;
+    color: white;
+    font-weight: bold;
+}
+.texto{font-variant: small-caps; font-size: 120%; color: white;}
+
+.projeto {width: 70%; float: left;}
+
+.logo_projeto {width: 29%; float: right; margin-right: -2%;}
+
+.membros{text-align: justify;}
+
+.fundoEscuro{background-color: #000000;}
+.fundoVerde{background-color: #173311;}
 
 /* ÍNICIO TABELA EQUIPE */
 .equipe {width: 80%; margin-left: 10%; text-align: center;}
@@ -180,7 +170,6 @@ a {color: azure; text-decoration: none;}
     width: 6%;
     border-radius: 11px;
 }
-
 .github_ico:hover{filter: brightness(200%);}
 /* FIM TABELA EQUIPE */
 
