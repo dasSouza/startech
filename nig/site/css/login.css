@@ -19,7 +19,7 @@
 /*FIM ANIMAÇÃO DO FINANCEIRO */
 
 
-/* INICIO DA TAMPA? */
+/* INICIO DAS ANIMAÇÔES DA TAMPA */
 .abrir_tampa{
     animation: abrir_tampa 1.5s ease-out;
 }
@@ -53,6 +53,30 @@
     transform: rotate(180deg);
 }
 
+/* INICIO DA TAMPA */
+.tampa {
+    top: 0;
+    padding-top: 30%;
+    text-align: center;
+    position: fixed;
+    z-index: 2;
+    background-color: #b34933;
+    height: 100%;
+    width: 2%;
+    float: right;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.tampa img {
+    width: 80%;
+    filter: brightness(200%);
+}
+
+.tampa:hover{
+    filter: brightness(40%);
+}
+
 /* FIM DA TAMPA */
 
 /* FIM DAS ANIMAÇÕES */
@@ -67,7 +91,6 @@
     top: 0;
     right: 0;
     background-color: rgb(22, 34, 31);
-    animation: login_abrir 1.5s ease-out;
     float: right;
 }
 
@@ -226,28 +249,3 @@
 }
 
 /*FIM CALCULADORA FINANCEIRA */
-
-/* TAMPA? */
-.tampa {
-    top: 0;
-    padding-top: 30%;
-    text-align: center;
-    position: fixed;
-    z-index: 2;
-    background-color: #b34933;
-    height: 100%;
-    width: 2%;
-    float: right;
-    cursor: pointer;
-    transition: 0.5s;
-}
-
-.tampa img {
-    width: 80%;
-    filter: brightness(200%);
-}
-
-.tampa:hover{
-    filter: brightness(40%);
-}
-/* TAMPA? */
