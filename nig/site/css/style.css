@@ -92,7 +92,7 @@ a {color: azure; text-decoration: none;}
     color: #252525;
     margin-top: 10px;
 }
- 
+
 /* INICIO ESTILIZAÇÃO NA PÁGINA SOBRE */
 .direita{
     margin-right: 5%;
@@ -196,8 +196,8 @@ a {color: azure; text-decoration: none;}
 .equipe {width: 80%; margin-left: 10%; text-align: center;}
 .equipe tr th img {margin-top: 9%; width: 34%; border-radius: 100%;}
 
-.linked_ico{width: 7%; padding: 2px; border-radius: 8px;}
-.linked_ico:hover{filter: brightness(130%);}
+.linked_ico{width: 7%; padding: 2px; border-radius: 8px; transition: 0.2s;}
+.linked_ico:hover{filter: brightness(130%); transform: scale(1.4); transition: 0.2s;}
 
 .github_ico{
     background-color: white;
@@ -205,9 +205,10 @@ a {color: azure; text-decoration: none;}
     padding: 2px;
     width: 6%;
     border-radius: 11px;
+    transition: 0.2s;
 }
 
-.github_ico:hover{filter: brightness(200%);}
+.github_ico:hover{filter: brightness(200%); transform: scale(1.4);}
 /* FIM TABELA EQUIPE */
 
 /* ÍNICIO FORMULÁRIO CONTATO */
@@ -219,7 +220,7 @@ a {color: azure; text-decoration: none;}
     float: left;
     width: 40%;
     text-align: -webkit-center;
-    background-color: #448c64;
+    background-color: #0B2109;
     border-radius: 10px;
     padding-bottom: 10px;
     padding-top: 10px;
@@ -233,7 +234,7 @@ a {color: azure; text-decoration: none;}
     border-radius: 10px;
 }
 .form_contact .btn{
-    background-color: #0f2a2a;
+    background-color: #292E1E;
     border-color: #0f2a2a;
     border-radius: 5px;
     width: 25%;

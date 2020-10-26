@@ -11,6 +11,7 @@
 ::-webkit-scrollbar-thumb {
     background: #b34933;
 }
+/* FIM BARRA DE ROLAGEM */
 
 body {
     background-color: #212427;
@@ -25,7 +26,23 @@ table {
 }
 /* FIM GLOBAL */
 
-/* BARRA LATERAL */
+/* INICIO LOGO */
+
+.logo_icons .logo img {
+    width: 90%;
+    box-sizing: border-box;
+}
+
+.logo {
+    position: absolute;
+    top: 1%;
+    margin-left: 5%;
+}
+
+/* FIM LOGO */
+
+
+/* INICIO DAS BARRA LATERAL */
 .sidebar {
     background-color:#282C31;
     position: fixed;
@@ -36,7 +53,7 @@ table {
     border-right: 2px solid #41805E;
 }
 
-/* ICONES */
+/* INICIO ICONES */
 
 .logo_icons .icons img{
     width: 40%;
@@ -44,8 +61,6 @@ table {
     margin-top: 40%;
     margin-bottom: 40%;
 }
-
-/* POSIÇÃO DOS ICONES */
 
 .icons {
     margin-top: 3%;    
@@ -63,26 +78,7 @@ table {
     position: absolute;
     bottom: 60%;
 }
-/* FIM ICONES */
 
-/* LOGO */
-
-.logo_icons .logo img {
-    width: 90%;
-    box-sizing: border-box;
-}
-
-/* POSIÇÃO DA LOGO */
-
-.logo {
-    position: absolute;
-    top: 1%;
-    margin-left: 5%;
-}
-
-/* FIM LOGO */
-
-/* ICONE LOGOUT */
 .logo_icons .icon_logout img{
     position: absolute;
     width: 50%;
@@ -90,11 +86,11 @@ table {
     bottom: 10px;
 }
 
-/* FIM ICONE LOGOUT */
+/* FIM ICONES */
 
 /* FIM BARRA LATERAL */
 
-/* Início Containers */
+/* INICIO CONTAIERNS */
 
 .containers{
     margin-top: 20px;
@@ -161,8 +157,10 @@ table {
     text-align: center;
     align-items: center;
 }
-
 /* FIM TABELA */
-/* Fim Containers */
+
+/* FIM CONTAINERS */
+
+
 
 /* ----------------PAGINA SETTINGS ----------------*/
