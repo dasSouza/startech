@@ -32,3 +32,15 @@ function logar() {
         }, 500)
     }
 }
+
+function verificar() {
+    if (login_email.value == "admin@admin.com" && login_senha.value == "admin") {
+        redirect.action = "node4.1/dashboard.html";
+        redirect.submit();
+    } else {
+        redirect.email.focus();
+        redirect.email.value = "";
+        redirect.senha.value = "";
+        alert("SENHA OU LOGIN INVÁLIDO");
+    }
+}

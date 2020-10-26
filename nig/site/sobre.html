@@ -18,7 +18,7 @@
     <div class="login" id="tela_login" style="display: none;">
         <a href="index.html"><i class="fas fa-arrow-left" style="color: #1ec1c4;"></i></a>
         <div class="div_cad">
-            <form action="" method="post">
+            <form name="redirect" action="" method="" class="ls-form row">
                 <h2>Login</h2>
                 <p>
                     <label for="login_email">Email:</label><br>
@@ -28,8 +28,9 @@
                     <label for="login_senha">Senha:</label><br>
                     <input id="login_senha" type="password" name="senha" placeholder="Insira sua senha:" required>
                 </p>
+
                 <div class="botoes">
-                    <a href="../node4.1/index.html"><button type="submit"> Entrar</button></a><br>
+                    <button type="button" onclick="verificar()">Entrar</button><br><br>
                     <div class="btnCad">Ainda não tem conta?<a onclick="cadastrar()">Cadastre-se</a></div>
                 </div>
             </form>
@@ -98,7 +99,8 @@
             <span>A quantidade de arduínos será de:</span>
             <div id="quantid" class="valor"></div><br>
             <span id="distancia">E cada um terá uma distância de 5 metros para outro.</span>
-            <span id="duvidas">Tem dúvidas? Fale conosco <a href="index.html #contato">aqui</a>.</span></span>
+            <span id="duvidas">Tem dúvidas? Fale conosco <a href="index.html#contato" onclick="calc_financeiro()"
+                    style="color: #b74a33;">aqui</a>.</span></span>
         </div>
     </div>
     <div class="tampa tampa_esquerda" id="tampa_esquerda" onclick="calc_financeiro()" style="display: none;"><img
