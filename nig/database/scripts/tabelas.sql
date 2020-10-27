@@ -1,45 +1,60 @@
 CREATE DATABASE BD_nig;
 USE BD_nig;
 
--- 
-CREATE TABLE tbUsuario (
-	id_Usuario int primary key auto_increment,
-	nome varchar(64) not null,
-	email varchar(100) not null,
-	cidade varchar(50) not null,
-	UF char(2) not null,
+CREATE TABLE tb_Empresa (
+	id_Empresa int primary key auto_increment,
+    nome_Empresa varchar (30),
+    estado_Empresa varchar (30),
+    cnpj char (14),
+    codigo varchar (15),
+    responsavel varchar (45)
+);
+ 
+CREATE TABLE tb_Funcionario (
+	id_Funcionario int primary key auto_increment,
+	nome varchar(20) not null,
+    sobrenome varchar (45) not null,
 	telefone varchar(14) not null,
-	horario_cadastro datetime not null
+	email varchar(100) not null,
+	senha varchar(64) not null,
+	UF char(2) not null,
+	cidade varchar(50) not null,
+    cpf char(14) not null,
+    fk_Empresa int,
+    foreign key (fk_Empresa) references tb_Empresa(id_Empresa)
 ) auto_increment = 1000;
                         
-CREATE TABLE tbLogin_Usuario (
-	idLogin_Usuario int primary key auto_increment,
-	usuario varchar(32) not null,
-	senha varchar(64) not null,
-	horario_login datetime not null,
-    	fk_id_Usuario int,
-    	foreign key (fk_id_Usuario) references tbUsuario(id_Usuario)
+CREATE TABLE tb_Controle_Login (
+	id_Controle_Login int primary key auto_increment,
+	horario_LogIn datetime,
+	horario_LogOut datetime,
+	ip_Conexao varchar(15) not null,
+	fk_Funcionario int,
+	foreign key (fk_Funcionario) references tb_Funcionario(id_Funcionario)
 );
 
-
-CREATE TABLE tbSensores (
-  id_sensor INT PRIMARY KEY AUTO_INCREMENT,
-  nome VARCHAR(5) NOT NULL,
-  zona_area VARCHAR(7) CHECK(zona_area ='norte' or zona_area= 'sul' or zona_area='leste' or zona_area= 'oeste'or zona_area ='centro'),
-  estado_sensor BOOLEAN DEFAULT TRUE,
-  horario_primeiro_uso DATETIME NOT NULL
+CREATE TABLE tb_Area (
+	id_Area INT PRIMARY KEY AUTO_INCREMENT,
+    nome_Area VARCHAR(30),
+    fk_Empresa INT,
+    FOREIGN KEY (fk_Empresa) REFERENCES tb_Empresa(id_Empresa)
 );
 
-CREATE TABLE tbDados_Sensores (
+CREATE TABLE tb_Sensores (
+  id_Sensor INT PRIMARY KEY AUTO_INCREMENT,
+  nome VARCHAR(20) NOT NULL,
+  horario_inicio DATETIME NOT NULL,
+  estado_Sensor BOOLEAN DEFAULT TRUE,
+  horario_parada DATETIME,
+  fk_Area INT,
+  FOREIGN KEY (fk_Area) REFERENCES tb_Area(id_Area)
+);
+
+CREATE TABLE tb_Dados_Sensores (
   id_dados INT PRIMARY KEY AUTO_INCREMENT,
-  temperatura DECIMAL(5,2) NOT NULL,
-  umidade DECIMAL(5,2) NOT NULL,
+  temperatura DECIMAL(3,1) NOT NULL,
+  umidade INT NOT NULL,
   horario_captacao DATETIME NOT NULL,
-	fk_id_sensores int,
-	foreign key (fk_id_sensores) references tbSensores(id_sensor)
+  fk_Sensores int,
+  foreign key (fk_Sensores) references tb_Sensores(id_Sensor)
 );
-
-describe tbDados_Sensores;
-describe tbSensores;
-describe tbLogin_Usuario;
-describe tbUsuario;
