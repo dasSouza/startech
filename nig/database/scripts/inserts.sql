@@ -1,4 +1,4 @@
-USE BD_init_0;
+USE BD_nig;
 
 
 insert into tb_Empresa values (null,'Vale','Minas Gerais','0000-123456/22','vale2020ads','João Macedo'),
