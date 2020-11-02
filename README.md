@@ -15,7 +15,7 @@ https://docs.google.com/spreadsheets/d/1SRIoD3DU5rX1TCXa356xtMs3ju-K8mL_wiOYQtGd
 Tabela para Burndown do Projeto (TI):
 https://docs.google.com/spreadsheets/d/10Lf5bD976ioWVFBCRRe8S17FehcBHazAmolfFC54RnE/edit?usp=sharing
 
-Power Point do Projeto:
+Sprint Review Meeting: https://docs.google.com/presentation/d/1mCWPRLmV7BZITQ25n2mqJ9jvynFK9c9ynkZc0hwKQhw/edit?usp=sharing
 
 Planilha de Riscos: https://docs.google.com/spreadsheets/d/1Lz2TIu41GK_zJflkwuXsFGb0b7Lnp0oLCjB17Jh530Y/edit?usp=sharing
 
